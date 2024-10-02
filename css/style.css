@@ -1,3 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+/* Navbar */
+
+/* #desktop-nav {
+  color: #646f79;
+} */
+/* .nav-mob-effect {
+  transition: all 3s ease-in-out;
+} */
+
+/* Hero Section */
+#hero {
+  background-image: url("../images/conference-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-cont {
+  background: linear-gradient(to bottom, #fc670b1f 0%, #ff6c10d0 100%);
+}

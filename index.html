@@ -1,20 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="./output.css" rel="stylesheet" /> -->
     <title>TechConf</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="h-[4.5rem] lg:h-[5rem] bg-white lg:bg-transparent w-full fixed top-0"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center h-full"
+      >
+        <!-- Logo -->
+        <div class="">
+          <a href="#hero"
+            ><img class="h-9 sm:h-10" src="./images/logo-bg-white.png" alt=""
+          /></a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="lg:hidden">
+          <button id="hamburger-btn">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Navbar Desktop -->
+        <ul
+          id="desktop-nav"
+          class="hidden lg:flex space-x-10 text-slate-300 text-[1.05rem] font-medium"
+        >
+          <li>
+            <a href="#hero" class="hover:text-amber-500">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-amber-500">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-500">Topics</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-500">Speakers</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-500">Schedule</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-500">Tickets</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-500">Gallery</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Navbar Mobile Menu-->
+      <div id="mobile-menu" class="hidden lg:hidden w-full nav-mob-effect">
+        <ul
+          class="flex flex-col font-medium space-y-5 pt-4 pb-10 pl-4 text-left bg-white"
+        >
+          <li>
+            <a href="#hero" class="text-gray-700 hover:text-amber-500">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="text-gray-700 hover:text-amber-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-amber-500">Topics</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-amber-500">Speakers</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-amber-500">Schedule</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-amber-500">Tickets</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-amber-500">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="flex flex-col hero-cont w-full h-screen">
+        <div class="w-[90%] md:w-[85%] lg:w-[80%] mx-auto pt-[12rem]">
+          <div class="text-white text-[1.1rem] font-medium">
+            29 to 31 November 2024
+          </div>
+          <h1 class="mb-6 text-white text-[3.5rem] sm:text-[5.3rem] font-bold">
+            Techconf
+          </h1>
+          <div class="text-white text-[1.1rem] font-medium">
+            With over 20 creative sessions
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap gap-10 sm:gap-12 w-[90%] md:w-[85%] lg:w-[80%] mx-auto mt-[5rem] lg:mt-[10rem]"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]"
+              src="./images/map-icon.svg"
+              alt=""
+            />
+            <div>
+              <div class="text-white font-bold text-[1.1rem]">Location</div>
+              <p class="text-gray-200 font-medium">Edwards Rd Cininnati,OH</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <img
+              class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]"
+              src="./images/speaker-icon.svg"
+              alt=""
+            />
+            <div>
+              <div class="text-white font-bold text-[1.1rem]">Speaker</div>
+              <p class="text-gray-200 font-medium">24 Professional Speakers</p>
+            </div>
+          </div>
+          <button
+            class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.2rem] font-bold w-40 px-4 py-4 bg-green-500 rounded-[8px]"
+          >
+            Buy Tickets
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+
+    <section id="about" class="py-16">
+      <div
+        class="sm:flex sm:flex-row sm:gap-14 w-[90%] sm:w-[85%] lg:w-[80%] mx-auto"
+      >
+        <div class="flex w-full flex-col gap-5 items-center">
+          <div
+            class="w-[95%] text-[1.7rem] md:text-[2.4rem] font-medium md:font-semibold"
+          >
+            UX, UI, Interaction, Product Design & Research.
+          </div>
+          <p class="text-gray-500 text-[1.02rem] font-medium">
+            UX strategy is the plan and approach for a digital product. UX
+            strategies help businesses translate their intended user experience
+            to every touchpoint.
+          </p>
+          <p class="text-gray-500 text-[1.02rem] font-medium">
+            Visual design is the use of imagery, color, and form to enhance
+            usability and improve the user experience.
+          </p>
+        </div>
+        <div
+          class="sm:w-[330px] md:w-[500px] my-9 pl-6 flex flex-col justify-start"
+        >
+          <div class="text-[1.1rem] font-medium mb-10">EVENT SPONSORS</div>
+          <div
+            class="flex flex-wrap gap-6 sm:flex-col items-start justify-start"
+          >
+            <img class="text-gray-500 h-8" src="./images/sponser1.svg" alt="" />
+            <img class="text-gray-500 h-8" src="./images/sponser2.svg" alt="" />
+            <img class="text-gray-500 h-8" src="./images/sponser3.svg" alt="" />
+            <img class="text-gray-500 h-8" src="./images/sponser4.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
-
-    <script src="index.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/b7c0508dd7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
