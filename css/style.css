@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+      .wavy-bg {
+        background-image: url("https://www.transparenttextures.com/patterns/wavecut.png");
+      }
+      /* Neumorphism */
+      .neumorphic {
+        background: #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+      }
+      .neumorphic-btn {
+        background: #e0e0e0;
+        border-radius: 20px;
+        box-shadow: 6px 6px 16px #bebebe, -6px -6px 16px #ffffff;
+        padding: 10px 20px;
+        transition: 0.3s;
+      }
+      .neumorphic-btn:hover {
+        box-shadow: inset 6px 6px 16px #bebebe, inset -6px -6px 16px #ffffff;
+      }
+
+      /* Glassmorphism */
+      .glassmorphic {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      /* Parallax Scrolling */
+      .parallax {
+        background-image: url("https://source.unsplash.com/random/1600x900?conference");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+       @media (max-width: 640px) {
+      /* Stack columns on small screens */
+      .grid-cols-3 {
+        grid-template-columns: 1fr;
+      }
+    }
