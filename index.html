@@ -369,8 +369,8 @@
             alt=""
           />
         </div>
-        <h2 class="text-3xl font-bold text-gray-800">Conference Schedule</h2>
-        <p class="text-center text-gray-500 mt-2 lg:px-56">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center">Conference Schedule</h2>
+        <p class="text-center text-gray-500 mt-2 lg:px-56 text-center">
           We are very excited about the program being planned for Events 2019
           this summer in Cincinati, Ohio.
         </p>
@@ -381,13 +381,13 @@
         <div class="grid-cols-5 grid text-white">
           <button class="py-6 px-4 bg-green-500 w-full font-semibold">
             Day 1
-            <span class="md: text-xs font-normal hidden">July 29, 2019</span>
+            <span class="lg:inline-flex text-xs font-normal hidden">July 29, 2019</span>
           </button>
           <button class="py-6 bg-blue-500 px-4 w-full font-semibold">
-            Day 2 <span class="text-xs font-normal">July 30, 2019</span>
+            Day 2 <span class="lg:inline-flex text-xs font-normal hidden">July 30, 2019</span>
           </button>
           <button class="py-6 bg-blue-500 px-4 w-full font-semibold">
-            Day 3 <span class="text-xs font-normal">July 31, 2019</span>
+            Day 3 <span class="lg:inline-flex text-xs font-normal hidden">July 31, 2019</span>
           </button>
         </div>
       </div>
@@ -501,23 +501,26 @@
 
     <!-- Countdown Section with Parallax Scrolling -->
     <section class="relative w-full py-20 text-white wavy-bg bg-green-500">
-      <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col justify-center items-center px-">
         <div
-          class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center"
+          class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center"
         >
           <img
-            class="w-8"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/schedule-icon.svg"
+            class="w-10"
+            src="https://i.ibb.co/FBfktqj/hhhh.png"
             alt=""
           />
         </div>
 
-        <p class="text-3xl font-semibold">
+        <p class="text-2xl md:text-3xl font-semibold text-center">
           Time left until the conference start
         </p>
-        <p class="mt-2">
+        <p class="mt-2 text-center">
           29 to 31 July 2019 with over 80 sessions - Cincinnati, Ohio
         </p>
+        <div class=" py-8 my-4 mx-10 w-80 md:1/2 bg-[#55c97e]">
+
+        </div>
       </div>
     </section>
 
@@ -552,21 +555,21 @@
         >
           <img
             class="w-8"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/schedule-icon.svg"
+            src="https://i.ibb.co/mzDpQvm/ticket-icon.png"
             alt=""
           />
         </div>
 
-        <h2 class="text-4xl font-bold text-gray-800">Conference Tickets</h2>
-        <p class="text-gray-500 mt-2">
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-800 text-center">Conference Tickets</h2>
+        <p class="text-gray-500 mt-2 text-center">
           Reserve your e-ticket for the event of the year. Don't miss it!
         </p>
       </div>
 
       <!-- Ticket Cards -->
-      <div class="grid gap-6 md:grid-cols-2">
+      <div class="flex gap-6 justify-center items-center flex-col md:flex-row">
         <!-- Standard Pass -->
-        <div class="glassmorphic shadow-lg rounded-lg p-8 border">
+        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
           <div class="text-center">
             <span class="text-sm text-green-500 uppercase font-semibold"
               >Standard Pass</span
@@ -631,7 +634,7 @@
           <!-- Button -->
           <div class="text-center mt-8">
             <button
-              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-green-600 hover:bg-green-600 transition"
+              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-green-600 bg-green-600 transition"
             >
               Buy ticket
             </button>
@@ -639,7 +642,7 @@
         </div>
 
         <!-- Silver Pass -->
-        <div class="glassmorphic shadow-lg rounded-lg p-8 border">
+        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
           <div class="text-center">
             <span class="text-sm text-blue-500 uppercase font-semibold"
               >Silver Pass</span
@@ -704,7 +707,7 @@
           <!-- Button -->
           <div class="text-center mt-8">
             <button
-              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-blue-600 hover:bg-blue-600 transition"
+              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-blue-600 bg-blue-600 transition"
             >
               Buy ticket
             </button>
