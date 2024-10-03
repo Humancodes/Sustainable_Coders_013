@@ -30,6 +30,7 @@ tailwind.config = {
         hovergreen: "#009467",
         bgfooter: "#141a26",
         orange: "#fc690b",
+        darkorange: "#cb5004",
       },
     },
     screens: {
