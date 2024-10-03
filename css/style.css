@@ -1,26 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-    list-style: none;
-    text-decoration: none;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+  list-style: none;
+  text-decoration: none;
 }
 
-section{
-    width: 100%;
+section {
+  width: 100%;
 }
 .registration-container {
-    
-    background-image: url('../images/conference-background.jpg'); /* Background image goes here */
-
+  background-image: url("../images/conference-background.jpg"); /* Background image goes here */
 }
-
 
 a {
   color: inherit;

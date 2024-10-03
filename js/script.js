@@ -29,6 +29,7 @@ tailwind.config = {
         primegreen: "#43c370",
         hovergreen: "#009467",
         bgfooter: "#141a26",
+        orange: "#fc690b",
       },
     },
     screens: {
