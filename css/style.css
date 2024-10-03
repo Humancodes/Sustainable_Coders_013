@@ -50,7 +50,7 @@ a {
 .main-top-topic {
   width: 100%;
   height: auto;
-  background-color: #f4f8fb;
+  /* background-color: #f4f8fb; */
 }
 .top-topic {
   width: 60%;
@@ -172,7 +172,7 @@ a {
   margin-bottom: 30px;
   align-items: center;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .interested-para {
   align-items: center;
@@ -200,7 +200,7 @@ a {
 
 /* tablet */
 
-@media (min-width: 770px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .boxes {
     width: 95%;
     height: auto;
@@ -214,7 +214,7 @@ a {
   .boxes > div {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     width: 92%;
-    height: 390px;
+    height:100%;
     margin: auto;
     background-color: white;
     padding: 20px;
@@ -230,8 +230,9 @@ a {
     gap: 30px 5px;
   }
 }
+
 /* Mobile */
-@media (max-width: 770px) {
+@media (max-width: 600px) {
   .boxes {
     width: 95%;
     height: auto;
@@ -264,7 +265,6 @@ a {
   .interested {
     width: 60%;
     height: auto;
-    /* border: 1px solid black; */
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
