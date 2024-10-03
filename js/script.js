@@ -30,6 +30,7 @@ tailwind.config = {
         hovergreen: "#009467",
         bgfooter: "#141a26",
         orange: "#fc690b",
+        darkorange: "#cb5004",
       },
     },
     screens: {
@@ -50,3 +51,50 @@ tailwind.config = {
     },
   },
 };
+
+// for Image Carousal
+
+const carouselItems = document.querySelectorAll('.carousel-item');
+    const indicators = document.querySelectorAll('.indicator');
+    let currentIndex = 0;
+
+    // Update active slide
+    function updateCarousel(index) {
+      // Remove active class from all items and indicators
+      carouselItems.forEach((item, i) => {
+        item.classList.remove('active');
+        indicators[i].classList.remove('bg-gray-600');
+        indicators[i].classList.add('bg-gray-400');
+      });
+
+      // Add active class to current item and indicator
+      carouselItems[index].classList.add('active');
+      indicators[index].classList.add('bg-gray-600');
+    }
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      updateCarousel(currentIndex);
+    }
+
+    // Next slide
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      updateCarousel(currentIndex);
+    });
+
+    // Previous slide
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+      updateCarousel(currentIndex);
+    });
+
+    // Indicator click
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel(currentIndex);
+      });
+    });
+
+    setInterval(nextSlide, 5000);
+
