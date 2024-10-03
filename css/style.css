@@ -219,6 +219,14 @@ a {
   transform: translateX(6px); /* Move right by 10px */
 }
 
+/* Carousel */
+.carousel-item {
+    display: none;
+}
+.carousel-item.active {
+    display: block;
+}
+
 /* speakers end */
 
 /* @media queries */
