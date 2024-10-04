@@ -23,6 +23,67 @@ section {
 a {
   color: inherit;
 }
+
+/* Dark Mode Light Mode */
+/* The switch - the box around the slider */
+.switch {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 1px solid #303136; /* Added border */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* Increased shadow size and intensity */
+  box-shadow: inset -5px -3px 8px -3px #8983f7, inset -12px -5px 2px 0 #a3dafb;
+}
+
 /* Navbar */
 
 /* #desktop-nav {
@@ -54,7 +115,6 @@ a {
   width: 60%;
   height: auto;
   margin: auto;
-  margin-top: 20px;
 }
 .img-topic {
   margin: auto;
@@ -247,7 +307,7 @@ a {
     gap: 30px 5px;
   }
 }
-@media (max-width: 750px){
+@media (max-width: 750px) {
   .boxes {
     width: 95%;
     height: auto;
