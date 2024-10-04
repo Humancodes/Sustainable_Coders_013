@@ -52,3 +52,7 @@ tailwind.config = {
     },
   },
 };
+
+
+// aos animation
+AOS.init();

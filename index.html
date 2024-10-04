@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <!-- animate.css -->
+     <!-- aos -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -154,11 +156,11 @@
 
     <!-- About Us -->
 
-    <section id="about" class="py-24 bg-white">
+    <section id="about" class="py-24 bg-white" >
       <div
         class="md:flex md:flex-row md:gap-12 w-[90%] sm:w-[80%] lg:w-[75%] mx-auto md:justify-between"
       >
-        <div class="flex max-w-[500px] md:max-w-[360px] lg:max-w-[500px] flex-col gap-5 items-center">
+        <div class="flex max-w-[500px] md:max-w-[360px] lg:max-w-[500px] flex-col gap-5 items-center" data-aos-delay="400" data-aos="fade-up">
           <div
             class="text-[1.7rem] sm:text-[2rem] md:text-[2.4rem] lg:text-[2.8rem]  font-medium sm:font-semibold lg:font-bold"
           >
@@ -175,7 +177,7 @@
           </p>
         </div>
         <div
-          class="my-9 md:pl-10 flex flex-col justify-start lg:max-w-[500px]"
+          class="my-9 md:pl-10 flex flex-col justify-start lg:max-w-[500px] " data-aos-delay="600" data-aos="fade-up"
         >
           <div class="text-[1.1rem] sm:text-[1.2rem] md:text-[1.4rem] font-medium md:font-semibold mb-10">EVENT SPONSORS</div>
           <div
@@ -209,9 +211,9 @@
         </h4>
       </div>
       <div class="boxes">
-        <div >
+        <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500">
           <img
-            class="logo"
+            class="logo" 
             src="https://mutationmedia.net/FOXECONF/assets/svg/speedometer-icon.svg"
           />
           <h1 class="box-head">UX Strategy</h1>
@@ -221,7 +223,7 @@
             to every touchpoint.
           </h1>
         </div>
-        <div >
+        <div data-aos="flip-up" data-aos-delay="700" data-aos-duration="1500">
           <img
             class="logo"
             src="https://mutationmedia.net/FOXECONF/assets/svg/target-icon.svg"
@@ -233,7 +235,7 @@
             as the basic materials so that they could plan navigation system.
           </h1>
         </div>
-        <div >
+        <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500">
           <img
             class="logo"
             src="https://mutationmedia.net/FOXECONF/assets/svg/clock-icon.svg"
@@ -244,7 +246,7 @@
             governance of content.
           </h1>
         </div>
-        <div >
+        <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500" >
           <img
             class="logo"
             src="https://mutationmedia.net/FOXECONF/assets/svg/idea-icon.svg"
@@ -255,7 +257,7 @@
             motivations through observation techniques.
           </h1>
         </div>
-        <div >
+        <div data-aos="flip-up" data-aos-delay="700" data-aos-duration="1500" >
           <img
             class="logo"
             src="https://mutationmedia.net/FOXECONF/assets/svg/settings-icon.svg"
@@ -266,7 +268,7 @@
             form to enhance usability and improve the user experience.
           </h1>
         </div>
-        <div >
+        <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500">
           <img
             class="logo"
             src="https://mutationmedia.net/FOXECONF/assets/svg/dollarsun-icon.svg"
@@ -554,7 +556,7 @@
       <!-- Ticket Cards -->
       <div class="flex gap-6 justify-center items-center flex-col md:flex-row">
         <!-- Standard Pass -->
-        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
+        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 " data-aos-delay="300" data-aos="flip-up"> 
           <div class="text-center">
             <span class="text-sm text-orange uppercase font-semibold"
               >Standard Pass</span
@@ -627,7 +629,7 @@
         </div>
 
         <!-- Silver Pass -->
-        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
+        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 " data-aos-delay="300" data-aos="flip-up"> 
           <div class="text-center">
             <span class="text-sm text-secondaryBlue uppercase font-semibold"
               >Silver Pass</span
@@ -854,6 +856,8 @@
       </div>
     </footer> -->
 
+    <!-- aos script -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script
