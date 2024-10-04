@@ -16,12 +16,23 @@ body {
 section {
   width: 100%;
 }
+
 .registration-container {
   background-image: url("../images/conference-background.jpg"); /* Background image goes here */
 }
 
 a {
   color: inherit;
+}
+.glass_morphism_cards {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #011a3e;
 }
 
 /* Dark Mode Light Mode */
@@ -146,11 +157,10 @@ input:checked + .slider:before {
   gap: 20px 0;
 }
 .boxes > div {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   width: 95%;
   height: 100%;
   margin: auto;
-  background-color: white;
+  /* background-color: white; */
   padding: 20px;
 }
 .logo {
@@ -166,7 +176,7 @@ input:checked + .slider:before {
 }
 .box-para {
   font-size: 18px;
-  color: #666e79;
+  color: #1f2021;
   margin-top: 10px;
 }
 .blue-button {
@@ -289,11 +299,10 @@ input:checked + .slider:before {
     gap: 20px;
   }
   .boxes > div {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     width: 92%;
     height: 100%;
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
     padding: 20px;
   }
   .speaker-box {
@@ -319,11 +328,10 @@ input:checked + .slider:before {
     gap: 20px;
   }
   .boxes > div {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     width: 85%;
     height: auto;
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
     padding: 30px 20px;
   }
 }

@@ -56,6 +56,11 @@ tailwind.config = {
         secondaryBlue: "#26355D",
         darkSecondaryBlue: "#1c294b",
         darkorange: "#cb5004",
+        black: "#011a3e",
+      },
+      boxShadow: {
+        "white-lg":
+          "rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px",
       },
     },
     screens: {
@@ -127,3 +132,35 @@ indicators.forEach((indicator, index) => {
 });
 
 setInterval(nextSlide, 5000);
+
+// presentaion vedio part
+// Click button to open video modal
+document.getElementById('videoButton').addEventListener('click', function() {
+    const videoModal = document.getElementById('videoModal');
+    const html5Video = document.getElementById('html5Video');
+    
+    // Show the modal
+    videoModal.classList.remove('hidden');
+    videoModal.classList.add('flex');
+
+    // Play the video with muted autoplay if required by the browser
+    html5Video.play().catch(function(error) {
+        console.log("Autoplay failed, browser policies may prevent it. Video will start muted.");
+        html5Video.muted = true;
+        html5Video.play();
+    });
+});
+
+// Click button to close modal and stop video
+document.getElementById('closeModal').addEventListener('click', function() {
+    const videoModal = document.getElementById('videoModal');
+    const html5Video = document.getElementById('html5Video');
+    
+    // Hide the modal
+    videoModal.classList.add('hidden');
+    videoModal.classList.remove('flex');
+    
+    // Pause and reset the video
+    html5Video.pause();
+    html5Video.currentTime = 0;
+});
