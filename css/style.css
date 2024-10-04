@@ -197,6 +197,14 @@ a {
 
 }
 
+/* Carousel */
+.carousel-item {
+    display: none;
+}
+.carousel-item.active {
+    display: block;
+}
+
 /* speakers end */
 
 /* @media queries */
@@ -234,9 +242,7 @@ a {
     gap: 30px 5px;
   }
 }
-
-/* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 750px){
   .boxes {
     width: 95%;
     height: auto;
@@ -253,8 +259,13 @@ a {
     height: auto;
     margin: auto;
     background-color: white;
-    padding: 20px;
+    padding: 30px 20px;
   }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  
   .speaker-box {
     width: 80%;
     height: auto;
