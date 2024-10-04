@@ -9,6 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- animate.css -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="./output.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/style.css">
@@ -358,7 +363,7 @@
     <!-- speakers end -->
 
     <!-- Conference Schedule -->
-    <section class="md:max-w-6xl mx-auto md:p-20 p-10" id="schedule">
+    <section class="md:max-w-6xl mx-auto md:p-20 md:p-10 p-6" id="schedule">
       <div class="flex flex-col justify-center items-center">
         <div
           class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center"
@@ -377,16 +382,16 @@
       </div>
 
       <!-- Tab Menu with Neumorphism -->
-      <div class="w-full mt-8 bg-blue-500">
-        <div class="grid-cols-5 grid text-white">
-          <button class="py-6 px-4 bg-green-500 w-full font-semibold">
+      <div class="w-full mt-8 bg-secondaryBlue">
+        <div class="grid-cols-3 md:grid-cols-5 grid text-white">
+          <button class="py-6 px-5 bg-orange w-full font-semibold">
             Day 1
             <span class="lg:inline-flex text-xs font-normal hidden">July 29, 2019</span>
           </button>
-          <button class="py-6 bg-blue-500 px-4 w-full font-semibold">
+          <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
             Day 2 <span class="lg:inline-flex text-xs font-normal hidden">July 30, 2019</span>
           </button>
-          <button class="py-6 bg-blue-500 px-4 w-full font-semibold">
+          <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
             Day 3 <span class="lg:inline-flex text-xs font-normal hidden">July 31, 2019</span>
           </button>
         </div>
@@ -500,51 +505,31 @@
     </section>
 
     <!-- Countdown Section with Parallax Scrolling -->
-    <section class="relative w-full py-20 text-white wavy-bg bg-green-500">
-      <div class="flex flex-col justify-center items-center px-">
+    <section class="relative w-full py-20 text-white wavy-bg bg-orange bg-img-timer " >
+      <div class="flex flex-col justify-center items-center ">
         <div
           class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center"
         >
           <img
             class="w-10"
-            src="https://i.ibb.co/FBfktqj/hhhh.png"
+            src="./images/hhhh.svg"
             alt=""
           />
         </div>
 
-        <p class="text-2xl md:text-3xl font-semibold text-center">
+        <p class="text-2xl md:text-3xl font-semibold text-center md:px-24">
           Time left until the conference start
         </p>
-        <p class="mt-2 text-center">
+        <p class="mt-2 text-center md:w-1/2">
           29 to 31 July 2019 with over 80 sessions - Cincinnati, Ohio
         </p>
-        <div class=" py-8 my-4 mx-10 w-80 md:1/2 bg-[#55c97e]">
+        <div class=" py-8 my-4 mx-10 w-72 sm:w-80 md:w-2/3 md:my-20 bg-white opacity-5">
 
         </div>
       </div>
     </section>
 
-    <!-- Scroll Up Button with Neumorphism -->
-    <a href="#hero" class="fixed bottom-8 right-8 ">
-      <button
-        class="neumorphic-btn  rounded-full p-4 bg-opacity-75 text-white bg-orange shadow-lg hover:bg-opacity-100 hover:bg-opacity-100 hover:-translate-y-2 transition-transform duration-300"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2.5"
-          stroke="currentColor"
-          class="w-5 h-5 "
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M5 15l7-7 7 7"
-          />
-        </svg>
-      </button>
-    </a>
+    
 
     <!-- Conference Tickets Section with Glassmorphism -->
     <section class="max-w-7xl mx-auto px-4 py-12" id="ticket">
@@ -571,7 +556,7 @@
         <!-- Standard Pass -->
         <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
           <div class="text-center">
-            <span class="text-sm text-green-500 uppercase font-semibold"
+            <span class="text-sm text-orange uppercase font-semibold"
               >Standard Pass</span
             >
             <p class="text-5xl font-bold mt-4 text-gray-800">$129</p>
@@ -585,7 +570,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-green-500"
+                class="w-6 h-6 text-orange"
               >
                 <path
                   stroke-linecap="round"
@@ -602,7 +587,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-green-500"
+                class="w-6 h-6 text-orange"
               >
                 <path
                   stroke-linecap="round"
@@ -619,7 +604,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-green-500"
+                class="w-6 h-6 text-orange"
               >
                 <path
                   stroke-linecap="round"
@@ -634,7 +619,7 @@
           <!-- Button -->
           <div class="text-center mt-8">
             <button
-              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-green-600 bg-green-600 transition"
+              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
             >
               Buy ticket
             </button>
@@ -644,7 +629,7 @@
         <!-- Silver Pass -->
         <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
           <div class="text-center">
-            <span class="text-sm text-blue-500 uppercase font-semibold"
+            <span class="text-sm text-secondaryBlue uppercase font-semibold"
               >Silver Pass</span
             >
             <p class="text-5xl font-bold mt-4 text-gray-800">$329</p>
@@ -658,7 +643,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-blue-500"
+                class="w-6 h-6 text-secondaryBlue"
               >
                 <path
                   stroke-linecap="round"
@@ -675,7 +660,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-blue-500"
+                class="w-6 h-6 text-secondaryBlue"
               >
                 <path
                   stroke-linecap="round"
@@ -692,7 +677,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-blue-500"
+                class="w-6 h-6 text-secondaryBlue"
               >
                 <path
                   stroke-linecap="round"
@@ -707,7 +692,7 @@
           <!-- Button -->
           <div class="text-center mt-8">
             <button
-              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-blue-600 bg-blue-600 transition"
+              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
             >
               Buy ticket
             </button>
@@ -797,7 +782,7 @@
             <input
               type="text"
               id="voice-search"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-3.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-secondaryBlue focus:border-blue-500 block w-full py-3.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Email"
               required
             />
