@@ -30,6 +30,8 @@ tailwind.config = {
         hovergreen: "#009467",
         bgfooter: "#141a26",
         orange: "#fc690b",
+        secondaryBlue: "#26355D",
+        darkSecondaryBlue: "#1c294b",
         darkorange: "#cb5004",
       },
     },
@@ -52,6 +54,9 @@ tailwind.config = {
   },
 };
 
+
+// aos animation
+AOS.init();
 // for Image Carousal
 
 const carouselItems = document.querySelectorAll('.carousel-item');

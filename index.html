@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- animate.css -->
+     <!-- aos -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="./output.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/style.css">
@@ -122,32 +132,43 @@
 
     <!-- About Us -->
 
-    <section id="about" class="py-24 bg-white">
-        <div class="md:flex md:flex-row md:gap-12 w-[90%] sm:w-[80%] lg:w-[75%] mx-auto md:justify-between">
-            <div class="flex max-w-[500px] md:max-w-[360px] lg:max-w-[500px] flex-col gap-5 items-center">
-                <div class="text-[1.7rem] sm:text-[2rem] md:text-[2.4rem] lg:text-[2.8rem]  font-medium sm:font-semibold lg:font-bold">
-                    UX, UI, Interaction, Product Design & Research.
-                </div>
-                <p class="text-gray-500 text-[1.02rem] sm:text-[1.1rem]  lg:text-[1.3rem] font-medium ">
-                    UX strategy is the plan and approach for a digital product. UX strategies help businesses translate their intended user experience to every touchpoint.
-                </p>
-                <p class="text-gray-500 text-[1.02rem] sm:text-[1.1rem] lg:text-[1.3rem] font-medium ">
-                    Visual design is the use of imagery, color, and form to enhance usability and improve the user experience.
-                </p>
-            </div>
-            <div class="my-9 md:pl-10 flex flex-col justify-start lg:max-w-[500px]">
-                <div class="text-[1.1rem] sm:text-[1.2rem] md:text-[1.4rem] font-medium md:font-semibold mb-10">EVENT SPONSORS</div>
-                <div class="flex flex-wrap flex-1 gap-6  items-start justify-start">
-                    <img class="text-gray-500 h-8" src="./images/sponser1.svg" alt="" />
-                    <img class="text-gray-500 h-8" src="./images/sponser2.svg" alt="" />
-                    <img class="text-gray-500 h-8" src="./images/sponser3.svg" alt="" />
-                    <img class="text-gray-500 h-8" src="./images/sponser4.svg" alt="" />
-                </div>
-            </div>
+    <section id="about" class="py-24 bg-white" >
+      <div
+        class="md:flex md:flex-row md:gap-12 w-[90%] sm:w-[80%] lg:w-[75%] mx-auto md:justify-between"
+      >
+        <div class="flex max-w-[500px] md:max-w-[360px] lg:max-w-[500px] flex-col gap-5 items-center" data-aos-delay="400" data-aos="fade-up">
+          <div
+            class="text-[1.7rem] sm:text-[2rem] md:text-[2.4rem] lg:text-[2.8rem]  font-medium sm:font-semibold lg:font-bold"
+          >
+            UX, UI, Interaction, Product Design & Research.
+          </div>
+          <p class="text-gray-500 text-[1.02rem] sm:text-[1.1rem]  lg:text-[1.3rem] font-medium ">
+            UX strategy is the plan and approach for a digital product. UX
+            strategies help businesses translate their intended user experience
+            to every touchpoint.
+          </p>
+          <p class="text-gray-500 text-[1.02rem] sm:text-[1.1rem] lg:text-[1.3rem] font-medium ">
+            Visual design is the use of imagery, color, and form to enhance
+            usability and improve the user experience.
+          </p>
         </div>
-        <div>
-
+        <div
+          class="my-9 md:pl-10 flex flex-col justify-start lg:max-w-[500px] " data-aos-delay="600" data-aos="fade-up"
+        >
+          <div class="text-[1.1rem] sm:text-[1.2rem] md:text-[1.4rem] font-medium md:font-semibold mb-10">EVENT SPONSORS</div>
+          <div
+            class="flex flex-wrap flex-1 gap-6  items-start justify-start"
+          >
+            <img class="text-gray-500 h-8" src="./images/sponser1.svg" alt="" />
+            <img class="text-gray-500 h-8" src="./images/sponser2.svg" alt="" />
+            <img class="text-gray-500 h-8" src="./images/sponser3.svg" alt="" />
+            <img class="text-gray-500 h-8" src="./images/sponser4.svg" alt="" />
+          </div>
         </div>
+      </div>
+      <div>
+        
+      </div>
     </section>
 
     <!-- topics start -->
@@ -163,47 +184,69 @@
             </h4>
     </section>
     <div class="boxes">
-        <div class="p-6">
-            <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/speedometer-icon.svg" />
+        <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500"class="p-6">
+            <img class="logo"  src="https://mutationmedia.net/FOXECONF/assets/svg/speedometer-icon.svg" />
             <h1 class="box-head">UX Strategy</h1>
             <h1 class="box-para">
                 UX strategy is the plan and approach for a digital product. UX strategies help businesses translate their intended user experience to every touchpoint.
             </h1>
         </div>
-        <div class="p-6">
-            <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/target-icon.svg" />
-            <h1 class="box-head">Information Architecture</h1>
-            <h1 class="box-para">
-                IA is a blueprint of the design structure which can be generated into wireframes and sitemaps of the project. UX designers use them as the basic materials so that they could plan navigation system.
-            </h1>
+        <div data-aos="flip-up" data-aos-delay="700" data-aos-duration="1500">
+          <img
+            class="logo"
+            src="https://mutationmedia.net/FOXECONF/assets/svg/target-icon.svg"
+          />
+          <h1 class="box-head">Information Architecture</h1>
+          <h1 class="box-para">
+            IA is a blueprint of the design structure which can be generated
+            into wireframes and sitemaps of the project. UX designers use them
+            as the basic materials so that they could plan navigation system.
+          </h1>
         </div>
-        <div class="p-6">
-            <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/clock-icon.svg" />
-            <h1 class="box-head">Content Strategy</h1>
-            <h1 class="box-para">
-                Content strategy focuses on the planning, creation, delivery, and governance of content.
-            </h1>
+        <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500">
+          <img
+            class="logo"
+            src="https://mutationmedia.net/FOXECONF/assets/svg/clock-icon.svg"
+          />
+          <h1 class="box-head">Content Strategy</h1>
+          <h1 class="box-para">
+            Content strategy focuses on the planning, creation, delivery, and
+            governance of content.
+          </h1>
         </div>
-        <div class="p-6">
-            <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/idea-icon.svg" />
-            <h1 class="box-head">User Research</h1>
-            <h1 class="box-para">
-                User research focuses on understanding user behaviors, needs, and motivations through observation techniques.
-            </h1>
+        <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500" >
+          <img
+            class="logo"
+            src="https://mutationmedia.net/FOXECONF/assets/svg/idea-icon.svg"
+          />
+          <h1 class="box-head">User Research</h1>
+          <h1 class="box-para">
+            User research focuses on understanding user behaviors, needs, and
+            motivations through observation techniques.
+          </h1>
         </div>
-        <div class="p-6">
-            <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/settings-icon.svg" />
-            <h1 class="box-head">Visual Design</h1>
-            <h1 class="box-para">
-                Visual design is the use of imagery, color, shapes, typography, and form to enhance usability and improve the user experience.
-            </h1>
+        <div data-aos="flip-up" data-aos-delay="700" data-aos-duration="1500" >
+          <img
+            class="logo"
+            src="https://mutationmedia.net/FOXECONF/assets/svg/settings-icon.svg"
+          />
+          <h1 class="box-head">Visual Design</h1>
+          <h1 class="box-para">
+            Visual design is the use of imagery, color, shapes, typography, and
+            form to enhance usability and improve the user experience.
+          </h1>
         </div>
-        <div class="p-6">
-            <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/dollarsun-icon.svg" />
-            <h1 class="box-head">Visual Design</h1>
-            <h1 class="box-para">
-                User experience metrics focus on ease of use. Usability is familiar territory and something that UX teams do well so this makes sense as a starting point.
-            </h1>
+        <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500">
+          <img
+            class="logo"
+            src="https://mutationmedia.net/FOXECONF/assets/svg/dollarsun-icon.svg"
+          />
+          <h1 class="box-head">Visual Design</h1>
+          <h1 class="box-para">
+            User experience metrics focus on ease of use. Usability is familiar
+            territory and something that UX teams do well so this makes sense as
+            a starting point.
+          </h1>
         </div>
     </div>
 
@@ -269,28 +312,35 @@
     <!-- speakers end -->
 
     <!-- Conference Schedule -->
-    <section class="md:max-w-6xl mx-auto md:p-20 p-10" id="schedule">
-        <div class="flex flex-col justify-center items-center">
-            <div class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center">
-                <img class="w-8" src="https://mutationmedia.net/FOXECONF/assets/svg/schedule-icon.svg" alt="" />
-            </div>
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center">Conference Schedule</h2>
-            <p class="text-center text-gray-500 mt-2 lg:px-56 text-center">
-                We are very excited about the program being planned for Events 2019 this summer in Cincinati, Ohio.
-            </p>
+    <section class="md:max-w-6xl mx-auto md:p-20 md:p-10 p-6" id="schedule">
+      <div class="flex flex-col justify-center items-center">
+        <div
+          class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center"
+        >
+          <img
+            class="w-8"
+            src="https://mutationmedia.net/FOXECONF/assets/svg/schedule-icon.svg"
+            alt=""
+          />
         </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center">Conference Schedule</h2>
+        <p class="text-center text-gray-500 mt-2 lg:px-56 text-center">
+          We are very excited about the program being planned for Events 2019
+          this summer in Cincinati, Ohio.
+        </p>
+      </div>
 
-        <!-- Tab Menu with Neumorphism -->
-        <div class="w-full mt-8 bg-blue-500">
-            <div class="grid-cols-5 grid text-white">
-                <button class="py-6 px-4 bg-green-500 w-full font-semibold">
+      <!-- Tab Menu with Neumorphism -->
+      <div class="w-full mt-8 bg-secondaryBlue">
+        <div class="grid-cols-3 md:grid-cols-5 grid text-white">
+          <button class="py-6 px-5 bg-orange w-full font-semibold">
             Day 1
             <span class="lg:inline-flex text-xs font-normal hidden">July 29, 2019</span>
           </button>
-                <button class="py-6 bg-blue-500 px-4 w-full font-semibold">
+          <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
             Day 2 <span class="lg:inline-flex text-xs font-normal hidden">July 30, 2019</span>
           </button>
-                <button class="py-6 bg-blue-500 px-4 w-full font-semibold">
+          <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
             Day 3 <span class="lg:inline-flex text-xs font-normal hidden">July 31, 2019</span>
           </button>
             </div>
@@ -374,43 +424,31 @@
     </section>
 
     <!-- Countdown Section with Parallax Scrolling -->
-    <section class="relative w-full py-20 text-white wavy-bg bg-green-500">
-        <div class="flex flex-col justify-center items-center px-">
-            <div class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center">
-                <img class="w-10" src="https://i.ibb.co/FBfktqj/hhhh.png" alt="" />
-            </div>
+    <section class="relative w-full py-20 text-white wavy-bg bg-orange bg-img-timer " >
+      <div class="flex flex-col justify-center items-center ">
+        <div
+          class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center"
+        >
+          <img
+            class="w-10"
+            src="./images/hhhh.svg"
+            alt=""
+          />
+        </div>
 
-            <p class="text-2xl md:text-3xl font-semibold text-center">
-                Time left until the conference start
-            </p>
-            <p class="mt-2 text-center">
-                29 to 31 July 2019 with over 80 sessions - Cincinnati, Ohio
-            </p>
-            <div class=" py-8 my-4 mx-10 w-80 md:1/2 bg-[#55c97e]">
+        <p class="text-2xl md:text-3xl font-semibold text-center md:px-24">
+          Time left until the conference start
+        </p>
+        <p class="mt-2 text-center md:w-1/2">
+          29 to 31 July 2019 with over 80 sessions - Cincinnati, Ohio
+        </p>
+        <div class=" py-8 my-4 mx-10 w-72 sm:w-80 md:w-2/3 md:my-20 bg-white opacity-5">
 
             </div>
         </div>
     </section>
 
-    <!-- Scroll Up Button with Neumorphism -->
-    <a href="#hero" class="fixed bottom-8 right-8 ">
-        <button class="neumorphic-btn  rounded-full p-4 bg-opacity-75 text-white bg-orange shadow-lg hover:bg-opacity-100 hover:bg-opacity-100 hover:-translate-y-2 transition-transform duration-300">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2.5"
-          stroke="currentColor"
-          class="w-5 h-5 "
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M5 15l7-7 7 7"
-          />
-        </svg>
-      </button>
-    </a>
+    
 
     <!-- Conference Tickets Section with Glassmorphism -->
     <section class="max-w-7xl mx-auto px-4 py-12" id="ticket">
@@ -426,12 +464,13 @@
             </p>
         </div>
 
-        <!-- Ticket Cards -->
-        <div class="flex gap-6 justify-center items-center flex-col md:flex-row">
-            <!-- Standard Pass -->
-            <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
-                <div class="text-center">
-                    <span class="text-sm text-green-500 uppercase font-semibold">Standard Pass</span
+      <!-- Ticket Cards -->
+      <div class="flex gap-6 justify-center items-center flex-col md:flex-row">
+        <!-- Standard Pass -->
+        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 " data-aos-delay="300" data-aos="flip-up"> 
+          <div class="text-center">
+            <span class="text-sm text-orange uppercase font-semibold"
+              >Standard Pass</span
             >
             <p class="text-5xl font-bold mt-4 text-gray-800">$129</p>
             <p class="text-gray-500">1 Day ticket</p>
@@ -444,7 +483,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-green-500"
+                class="w-6 h-6 text-orange"
               >
                 <path
                   stroke-linecap="round"
@@ -454,9 +493,15 @@
                 />
               </svg>
               <span>Main Event speeches</span>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-green-500">
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-orange"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -464,10 +509,16 @@
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-                        <span>All areas access</span>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-green-500">
+              <span>All areas access</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-orange"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -475,21 +526,24 @@
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-                        <span>Lunch on day 1</span>
-                    </li>
-                    </ul>
-                    <!-- Button -->
-                    <div class="text-center mt-8">
-                        <button class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-green-600 bg-green-600 transition">
+              <span>Lunch on day 1</span>
+            </li>
+          </ul>
+          <!-- Button -->
+          <div class="text-center mt-8">
+            <button
+              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
+            >
               Buy ticket
             </button>
                     </div>
                 </div>
 
-                <!-- Silver Pass -->
-                <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4">
-                    <div class="text-center">
-                        <span class="text-sm text-blue-500 uppercase font-semibold">Silver Pass</span
+        <!-- Silver Pass -->
+        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 " data-aos-delay="300" data-aos="flip-up"> 
+          <div class="text-center">
+            <span class="text-sm text-secondaryBlue uppercase font-semibold"
+              >Silver Pass</span
             >
             <p class="text-5xl font-bold mt-4 text-gray-800">$329</p>
             <p class="text-gray-500">All Days ticket</p>
@@ -502,7 +556,7 @@
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                class="w-6 h-6 text-blue-500"
+                class="w-6 h-6 text-secondaryBlue"
               >
                 <path
                   stroke-linecap="round"
@@ -512,9 +566,15 @@
                 />
               </svg>
               <span>Main Event speeches</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-blue-500">
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-secondaryBlue"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -522,10 +582,16 @@
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-                            <span>Limited areas access</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-blue-500">
+              <span>Limited areas access</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-secondaryBlue"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -533,12 +599,14 @@
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-                            <span>All days lunch</span>
-                        </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="text-center mt-8">
-                            <button class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-blue-600 bg-blue-600 transition">
+              <span>All days lunch</span>
+            </li>
+          </ul>
+          <!-- Button -->
+          <div class="text-center mt-8">
+            <button
+              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
+            >
               Buy ticket
             </button>
                         </div>
@@ -728,6 +796,8 @@
         </div>
     </footer>
 
+    <!-- aos script -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/b7c0508dd7.js" crossorigin="anonymous"></script>

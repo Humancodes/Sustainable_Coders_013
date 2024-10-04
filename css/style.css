@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   list-style: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 section {
@@ -115,7 +116,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  background-color: #224dd7;
+  background-color: #fc690b;
   color: white;
   font-weight: 500;
   border-radius: 8px;
@@ -123,7 +124,7 @@ a {
   border: none;
 }
 .blue-button:hover {
-  background-color: #1236ae;
+  background-color: #d85808;
 }
 
 /* topics end */
@@ -181,7 +182,7 @@ a {
 }
 .ticket {
   display: inline-block; /* Ensure it's inline for smooth movement */
-  color: #003bfc;
+  color: #d85808;
   margin-left: 10px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -189,6 +190,11 @@ a {
 
 .ticket:hover {
   transform: translateX(6px); /* Move right by 10px */
+}
+/* timer section  */
+.bg-img-timer{
+  background-image: url('../images/business-2626052_1280.jpg');
+
 }
 
 /* Carousel */
@@ -215,6 +221,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
     gap: 20px;
+ 
   }
   .boxes > div {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
