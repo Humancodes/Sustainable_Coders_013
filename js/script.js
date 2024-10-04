@@ -56,7 +56,9 @@ tailwind.config = {
 
 
 // aos animation
-AOS.init();
+AOS.init({
+  duration: 1200,
+});
 // for Image Carousal
 
 const carouselItems = document.querySelectorAll('.carousel-item');
