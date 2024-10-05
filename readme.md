@@ -7,7 +7,7 @@ TechConf is a modern, responsive website designed for a major tech conference, a
 ## Project Type
 Frontend
 
-## Deplolyed App
+## Deployed App
 https://techconf-ochre.vercel.app/
 
 ## Directory Structure
