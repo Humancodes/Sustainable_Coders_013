@@ -49,13 +49,13 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 ## Installation & Getting started
 Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
-# Clone the repository
+### Clone the repository
 git clone https://github.com/Humancodes/Sustainable_Coders_013.git
 
-# Navigate to the project folder
+### Navigate to the project folder
 cd Sustainable_Coders_013
 
-# Paste the path of index.html
+### Paste the path of index.html
 or download the live server extension from VS code extensions and then click on **Go Live** on the bottom right 
 
 ## Usage
