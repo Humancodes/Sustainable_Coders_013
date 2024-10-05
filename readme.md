@@ -47,7 +47,7 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 - For the social media integration, instead of live feeds, we used a photo carousel for past event highlights to keep the site lightweight and visually engaging.
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+Detailed instructions on how to install, configure, and get the project running.
 
 ### Clone the repository
 git clone https://github.com/Humancodes/Sustainable_Coders_013.git
