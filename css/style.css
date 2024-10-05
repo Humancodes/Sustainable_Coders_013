@@ -18,7 +18,7 @@ section {
 }
 
 .registration-container {
-  background-image: url("../images/conference-background.jpg"); /* Background image goes here */
+  background-image: url("../images/conference-background.webp"); /* Background image goes here */
 }
 
 a {
@@ -98,7 +98,7 @@ input:checked + .slider:before {
 
 /* Hero Section */
 #hero {
-  background-image: url("../images/conference-background.jpg");
+  background-image: url("../images/conference-background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
