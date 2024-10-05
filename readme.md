@@ -12,17 +12,17 @@ https://techconf-ochre.vercel.app/
 
 ## Directory Structure
 
-``
-Sustainable_Coders_013/
-├─ css/
-│  ├─ style.css
-├─ js/
-│  ├─ script.js
-├─ images/
-│  ├─ ...
-├─ index.html
-├─ readme.md
-``
+
+    Sustainable_Coders_013/
+    ├─ css/
+    │  ├─ style.css
+    ├─ js/
+    │  ├─ script.js
+    ├─ images/
+    │  ├─ ...
+    ├─ index.html
+    ├─ readme.md
+
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
