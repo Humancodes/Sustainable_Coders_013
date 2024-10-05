@@ -29,15 +29,9 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <!-- animate.css -->
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- <link href="./output.css" rel="stylesheet" /> -->
+    
     <link rel="stylesheet" href="css/style.css" />
     <title>TechConf</title>
     <link
@@ -247,25 +241,28 @@
               <div class="text-white font-bold text-[1.1rem]">Location</div>
               <p class="text-gray-200 font-medium">Edwards Rd Cininnati,OH</p>
             </div>
-          </div>
-          <div class="flex items-center gap-4" data-aos="zoom-in">
-            <img
-              class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]"
-              src="./images/speaker-icon.svg"
-              alt=""
-            />
-            <div>
-              <div class="text-white font-bold text-[1.1rem]">Speaker</div>
-              <p class="text-gray-200 font-medium">24 Professional Speakers</p>
+            <div class="flex flex-wrap gap-10 sm:gap-12 w-[90%] md:w-[85%] lg:w-[80%] mx-auto my-[5rem] lg:my-[10rem]">
+                <div class="flex items-center gap-4" data-aos="zoom-in" >
+                    <img class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]" src="./images/map-icon.svg" alt="" />
+                    <div>
+                        <div class="text-white font-bold text-[1.1rem]">Location</div>
+                        <p class="text-gray-200 font-medium">Delhi</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4"  data-aos="zoom-in" >
+                    <img class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]" src="./images/speaker-icon.svg" alt="" />
+                    <div>
+                        <div class="text-white font-bold text-[1.1rem]">Speaker</div>
+                        <p class="text-gray-200 font-medium">24 Professional Speakers</p>
+                    </div>
+                </div>
+                <a href="#registration">
+                  <button class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.1rem] font-bold w-40 px-4 py-3  rounded-[8px]" data-aos="fade-up" data-aos-delay="300">
+                    Buy Tickets
+                  </button>
+                </a>
+                
             </div>
-          </div>
-          <button
-            class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.1rem] font-bold w-40 px-4 py-3 rounded-[8px]"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            Buy Tickets
-          </button>
         </div>
       </div>
     </section>
@@ -343,8 +340,9 @@
               alt=""
             />
           </div>
+          </div>
+
         </div>
-      </div>
     </section>
     <!-- Scroll Up Button-->
     <a href="#hero" class="fixed bottom-8 right-8 z-50">
@@ -623,16 +621,10 @@
               alt=""
             />
           </div>
-          <h2
-            class="text-2xl md:text-3xl font-bold text-gray-800 md:pb-3 dark:text-white text-center"
-          >
-            Conference Schedule
-          </h2>
-          <p
-            class="text-center text-gray-500 mt-2 lg:px-56 text-center dark:text-gray-300"
-          >
-            We are very excited about the program being planned for Events 2019
-            this summer in Cincinati, Ohio.
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 md:pb-3  dark:text-white text-center">Conference Schedule</h2>
+          <p class="text-center text-gray-500 mt-2 lg:px-56 text-center dark:text-gray-300">
+            We are very excited about the program being planned for Events 2024
+            this summer in Delhi.
           </p>
         </div>
 
@@ -811,7 +803,7 @@
           Time left until the conference start
         </p>
         <p class="mt-2 text-center md:w-1/2 font-semibold" data-aos="fade-up">
-          29 to 31 November 2024 with over 80 sessions - Cincinnati, Ohio
+            29 to 31 November 2024 with over 20 sessions - Delhi
         </p>
         <div
           class="count-down max-w-full md:p-6 mt-6"
@@ -826,202 +818,180 @@
       </div>
     </section>
     <!-- Conference Tickets Section with Glassmorphism -->
-    <section class="px-4 py-12 dark:bg-black" id="ticket">
-      <!-- Title and Subtitle -->
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col justify-center items-center mb-10">
-          <div
-            class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center"
-            data-aos="zoom-in"
-            data-aos-duration="600"
-          >
-            <img
-              class="w-8"
-              src="https://i.ibb.co/mzDpQvm/ticket-icon.png"
-              alt=""
-            />
-          </div>
+    <section class="px-4 py-12 dark:bg-black" id="tickets">
+        <!-- Title and Subtitle -->
+         <div class="max-w-7xl mx-auto">
+           <div class="flex flex-col justify-center items-center mb-10">
+               <div class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center" data-aos="zoom-in" data-aos-duration="600">
+                   <img class="w-8" src="https://i.ibb.co/mzDpQvm/ticket-icon.png" alt="" />
+               </div>
+   
+               <h2 class="text-2xl md:text-4xl font-bold text-gray-800 dark:text-white text-center" data-aos="fade-up" data-aos-duration="800">Conference Tickets</h2>
+               <p class="text-gray-500 mt-4 text-center dark:text-gray-300"  data-aos="fade-up"  data-aos-duration="800">
+                   Reserve your e-ticket for the event of the year. Don't miss it!
+               </p>
+           </div>
+   
+         <!-- Ticket Cards -->
+         <div class="flex gap-6 justify-center items-center flex-col md:flex-row ">
+           <!-- Standard Pass -->
+           <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 "data-aos="flip-up" data-aos-duration="700"> 
+             <div class="text-center">
+               <span class="text-sm text-orange uppercase font-semibold"
+                 >Standard Pass</span
+               >
+               <p class="text-5xl font-bold mt-4 text-gray-800 dark:text-white">₹1299</p>
+               <p class="text-gray-500 dark:text-gray-300">1 Day ticket</p>
+             </div>
+             <!-- Features -->
+             <ul class="mt-6 space-y-4 dark:text-white" data-aos="fade-down" >
+               <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="100">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-orange"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Main Event speeches</span>
+               </li>
+               <li class="flex items-center space-x-3"  data-aos="fade-up" data-aos-delay="200">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-orange"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>All areas access</span>
+               </li>
+               <li class="flex items-center space-x-3"  data-aos="fade-up" data-aos-delay="300">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-orange"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Lunch on day 1</span>
+               </li>
+             </ul>
+             <!-- Button -->
+             <div class="text-center mt-8">
+              <a href="#registration">
+                <button
+                 class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
+                 data-aos="zoom-in" data-aos-delay="500"
+               >
+                 Buy ticket
+               </button>
+              </a>
+               
+                       </div>
+                   </div>
+   
+           <!-- Silver Pass -->
+           <div class="glassmorphic dark:bg-white shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 "data-aos="flip-up" data-aos-duration="700"> 
+             <div class="text-center">
+               <span class="text-sm text-secondaryBlue uppercase font-semibold"
+                 >Silver Pass</span
+               >
+               <p class="text-5xl font-bold mt-4 text-gray-800 ">₹2299</p>
+               <p class="text-gray-600">All Days ticket</p>
+             </div>
+             <!-- Features -->
+             <ul class="mt-6 space-y-4" data-aos="fade-down" >
+               <li class="flex items-center space-x-3"  data-aos="fade-up" data-aos-delay="100">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-secondaryBlue"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Main Event speeches</span>
+               </li>
+               <li class="flex items-center space-x-3"  data-aos="fade-up" data-aos-delay="200">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-secondaryBlue"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Limited areas access</span>
+               </li>
+               <li class="flex items-center space-x-3"  data-aos="fade-up" data-aos-delay="300">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-secondaryBlue"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>All days lunch</span>
+               </li>
+             </ul>
+             <!-- Button -->
+             <div class="text-center mt-8">
+              <a href="#registration">
+                <button
+                 class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
+                 data-aos="zoom-in" data-aos-delay="300"
+               >
+                 Buy ticket
+               </button>
+              </a>
+               
+                           </div>
+                       </div>
+                   </div>
 
-          <h2
-            class="text-2xl md:text-4xl font-bold text-gray-800 dark:text-white text-center"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            Conference Tickets
-          </h2>
-          <p
-            class="text-gray-500 mt-4 text-center dark:text-gray-300"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            Reserve your e-ticket for the event of the year. Don't miss it!
-          </p>
-        </div>
+         
 
-        <!-- Ticket Cards -->
-        <div
-          class="flex gap-6 justify-center items-center flex-col md:flex-row"
-        >
-          <!-- Standard Pass -->
-          <div
-            class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4"
-            data-aos="flip-up"
-            data-aos-duration="700"
-          >
-            <div class="text-center">
-              <span class="text-sm text-orange uppercase font-semibold"
-                >Standard Pass</span
-              >
-              <p class="text-5xl font-bold mt-4 text-gray-800 dark:text-white">
-                ₹1299
-              </p>
-              <p class="text-gray-500 dark:text-gray-300">1 Day ticket</p>
-            </div>
-            <!-- Features -->
-            <ul class="mt-6 space-y-4 dark:text-white" >
-              <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="100" >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-orange"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Main Event speeches</span>
-              </li>
-              <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="200" >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-orange"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>All areas access</span>
-              </li>
-              <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="300" >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-orange"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Lunch on day 1</span>
-              </li>
-            </ul>
-            <!-- Button -->
-            <div class="text-center mt-8">
-              <button
-                class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
-                data-aos="zoom-in"
-                data-aos-delay="500"
-              >
-                Buy ticket
-              </button>
-            </div>
-          </div>
-
-          <!-- Silver Pass -->
-          <div
-            class="glassmorphic dark:bg-white shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4"
-            data-aos="flip-up"
-            data-aos-duration="700"
-          >
-            <div class="text-center">
-              <span class="text-sm text-secondaryBlue uppercase font-semibold"
-                >Silver Pass</span
-              >
-              <p class="text-5xl font-bold mt-4 text-gray-800">₹2299</p>
-              <p class="text-gray-600">All Days ticket</p>
-            </div>
-            <!-- Features -->
-            <ul class="mt-6 space-y-4" >
-              <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="100" >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-secondaryBlue"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Main Event speeches</span>
-              </li>
-              <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="200">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-secondaryBlue"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Limited areas access</span>
-              </li>
-              <li class="flex items-center space-x-3" data-aos="fade-up" data-aos-delay="300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-secondaryBlue"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>All days lunch</span>
-              </li>
-            </ul>
-            <!-- Button -->
-            <div class="text-center mt-8">
-              <button
-                class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              >
-                Buy ticket
-              </button>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
 
@@ -1031,6 +1001,7 @@
       class="bg-cover bg-center flex justify-center items-center registration-container bg-parallax"
       data-aos="fade-up"
       data-aos-duration="700"
+      id="registration"
     >
       <div
         class="container flex flex-col lg:flex-row justify-between md:justify-evenly items-center h-screen bg-cover bg-center p-6"
@@ -1098,15 +1069,9 @@
       </div>
     </section>
 
-    <!-- Carousel Section -->
-    <section
-      class="relative dark:bg-black px-12 pt-12 pb-40"
-      data-aos="fade-up"
-      data-aos-duration="700"
-    >
-      <div
-        class="max-w-6xl mx-auto px-4 md:px-0 relative w-full overflow-hidden flex flex-col justify-center"
-      >
+  <!-- Carousel Section -->
+  <section id="gallery" class="relative dark:bg-black px-12 pt-12 pb-40 " data-aos="fade-up" data-aos-duration="700"> 
+    <div class="max-w-6xl mx-auto px-4 md:px-0 relative w-full overflow-hidden flex flex-col justify-center">
         <!-- Text Content -->
         <div
           class="self-center md:w-1/2"
