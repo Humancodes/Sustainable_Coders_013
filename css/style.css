@@ -16,6 +16,7 @@ body {
 section {
   width: 100%;
 }
+
 .registration-container {
   background-image: url("../images/conference-background.jpg"); /* Background image goes here */
 }
@@ -23,6 +24,77 @@ section {
 a {
   color: inherit;
 }
+.glass_morphism_cards {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #011a3e;
+}
+
+/* Dark Mode Light Mode */
+/* The switch - the box around the slider */
+.switch {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 1px solid #303136; /* Added border */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* Increased shadow size and intensity */
+  box-shadow: inset -5px -3px 8px -3px #8983f7, inset -12px -5px 2px 0 #a3dafb;
+}
+
 /* Navbar */
 
 /* #desktop-nav {
@@ -54,7 +126,6 @@ a {
   width: 60%;
   height: auto;
   margin: auto;
-  margin-top: 20px;
 }
 .img-topic {
   margin: auto;
@@ -83,15 +154,13 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
- gap: 20px 0;
-
+  gap: 20px 0;
 }
-.boxes >div {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+.boxes > div {
   width: 95%;
-  height:100%;
+  height: 100%;
   margin: auto;
-  background-color: white;
+  /* background-color: white; */
   padding: 20px;
 }
 .logo {
@@ -107,7 +176,7 @@ a {
 }
 .box-para {
   font-size: 18px;
-  color: #666e79;
+  color: #1f2021;
   margin-top: 10px;
 }
 .blue-button {
@@ -170,7 +239,8 @@ a {
   margin-bottom: 30px;
   align-items: center;
   padding: 10px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .interested-para {
   align-items: center;
@@ -200,15 +270,22 @@ a {
 
 /* Carousel */
 .carousel-item {
-    display: none;
+  display: none;
 }
 .carousel-item.active {
-    display: block;
+  display: block;
 }
 
 /* speakers end */
 
 /* @media queries */
+/* bg-paralax scrolling */
+.bg-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* tablet */
 
@@ -222,14 +299,12 @@ a {
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
     gap: 20px;
- 
   }
   .boxes > div {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     width: 92%;
-    height:100%;
+    height: 100%;
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
     padding: 20px;
   }
   .speaker-box {
@@ -243,7 +318,7 @@ a {
     gap: 30px 5px;
   }
 }
-@media (max-width: 750px){
+@media (max-width: 750px) {
   .boxes {
     width: 95%;
     height: auto;
@@ -255,11 +330,10 @@ a {
     gap: 20px;
   }
   .boxes > div {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     width: 85%;
     height: auto;
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
     padding: 30px 20px;
   }
 }
@@ -300,7 +374,6 @@ a {
 
 /* Mobile */
 @media (max-width: 600px) {
-  
   .speaker-box {
     width: 80%;
     height: auto;

@@ -18,86 +18,105 @@
         <link href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css" rel="stylesheet" />
         <!-- Font Awesome -->
         <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <!-- animate.css -->
-     <!-- aos -->
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="./output.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/style.css">
     <title>TechConf</title>
+    <link rel="icon" href="https://i.ibb.co/qjy9Pjk/logo-bg-dark.png" type="image/png">
 </head>
 
-<body>
+<body id="bodyCont" class="">
     <!-- NAVBAR -->
 
-    <nav id="navbar" class="h-[4.5rem] lg:h-[5rem] bg-white lg:bg-transparent w-full fixed top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center h-full">
+    <nav id="navbar" class="h-[4.5rem] lg:h-[5rem] bg-white dark:bg-black dark:text-white  lg:bg-transparent w-full fixed top-0 z-50" data-aos="fade-down" data-aos-duration="800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center h-full" data-aos="zoom-in" data-aos-delay="500">
             <!-- Logo -->
-            <div class="">
+            <div class="" data-aos="zoom-out" data-aos-delay="700">
                 <a href="#hero"><img class="h-9 sm:h-10" src="./images/logo-bg-white.png" alt="" /></a>
             </div>
 
             <!-- Hamburger icon -->
-            <div class="lg:hidden">
+            
+            <div class="lg:hidden flex" data-aos="fade-left" >
+                <!-- <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label> -->
                 <button id="hamburger-btn">
             <i class="fa-solid fa-bars text-xl sm:text-black-400"></i>
           </button>
+          
+        
             </div>
 
             <!-- Navbar Desktop -->
-            <ul id="desktop-nav" class="hidden lg:flex space-x-10 text-slate-300 text-[1.05rem] font-medium">
+            <ul id="desktop-nav" class="hidden lg:flex lg:items-center space-x-10  text-[1.05rem] font-medium" data-aos="fade-up" data-aos-delay="1000">
                 <li>
-                    <a href="#hero" class="hover:text-amber-500">Home</a>
+                    <a href="#hero" class="hover:text-orange transition ease-in-out duration-300">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="hover:text-amber-500">About</a>
+                    <a href="#about" class="hover:text-orange transition ease-in-out duration-300">About</a>
                 </li>
                 <li>
-                    <a href="#topic" class="hover:text-amber-500">Topics</a>
+                    <a href="#topic" class="hover:text-orange transition ease-in-out duration-300">Topics</a>
                 </li>
                 <li>
-                    <a href="#speakers" class="hover:text-amber-500">Speakers</a>
+                    <a href="#speakers" class="hover:text-orangetransition ease-in-out duration-300">Speakers</a>
                 </li>
                 <li>
-                    <a href="#schedule" class="hover:text-amber-500">Schedule</a>
+                    <a href="#schedule" class="hover:text-orange transition ease-in-out duration-300">Schedule</a>
                 </li>
                 <li>
-                    <a href="#tickets" class="hover:text-amber-500">Tickets</a>
+                    <a href="#tickets" class="hover:text-orange transition ease-in-out duration-300">Tickets</a>
                 </li>
                 <li>
-                    <a href="#gallery" class="hover:text-amber-500">Gallery</a>
+                    <a href="#gallery" class="hover:text-orange transition ease-in-out duration-300">Gallery</a>
+                </li>
+
+                <li>
+                    <label id="switch" class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </li>
             </ul>
         </div>
 
         <!--Navbar Mobile Menu-->
-        <div id="mobile-menu" class="hidden lg:hidden w-full nav-mob-effect">
-            <ul class="flex flex-col font-medium space-y-5 pt-4 pb-10 pl-4 text-left bg-white">
+        <div id="mobile-menu" class="hidden lg:hidden w-full nav-mob-effect "  data-aos="fade-up" data-aos-duration="800">
+            <ul class="flex flex-col font-medium space-y-5 pt-4 pb-10 pl-4 text-left bg-white items-center dark:bg-black">
                 <li>
-                    <a href="#hero" class="text-gray-700 hover:text-amber-500">Home</a>
+                    <a href="#hero" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="text-gray-700 hover:text-amber-500">About</a
+                    <a href="#about" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">About</a
             >
           </li>
           <li>
-            <a href="#topic" class="text-gray-700 hover:text-amber-500">Topics</a>
+            <a href="#topic" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">Topics</a>
                 </li>
                 <li>
-                    <a href="#speakers" class="text-gray-700 hover:text-amber-500">Speakers</a>
+                    <a href="#speakers" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">Speakers</a>
                 </li>
                 <li>
-                    <a href="#schedule" class="text-gray-700 hover:text-amber-500">Schedule</a>
+                    <a href="#schedule" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">Schedule</a>
                 </li>
                 <li>
-                    <a href="#tickets" class="text-gray-700 hover:text-amber-500">Tickets</a>
+                    <a href="#tickets" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">Tickets</a>
                 </li>
                 <li>
-                    <a href="#gallery" class="text-gray-700 hover:text-amber-500">Gallery</a>
+                    <a href="#gallery" class="text-gray-700 dark:text-white hover:text-orange transition ease-in-out duration-300">Gallery</a>
+                </li>
+                <li>
+                    <label id="switch" class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </li>
             </ul>
         </div>
@@ -105,33 +124,33 @@
     <!-- HERO -->
     <section id="hero">
         <div class="flex flex-col hero-cont w-full ">
-            <div class="w-[90%] md:w-[85%] lg:w-[80%] mx-auto pt-[12rem]">
-                <div class="text-white text-[1.1rem] font-medium">
+            <div class="w-[90%] md:w-[85%] lg:w-[80%] mx-auto pt-[12rem]"  data-aos="fade-up">
+                <div class="text-white text-[1.1rem] font-medium"  data-aos="fade-up" >
                     29 to 31 November 2024
                 </div>
-                <h1 class="mb-6 text-white text-[3.5rem] sm:text-[5.3rem] font-bold">
+                <h1 class="mb-6 text-white text-[3.5rem] sm:text-[5.3rem] font-bold" data-aos="fade-down">
                     Techconf
                 </h1>
-                <div class="text-white text-[1.1rem] font-medium">
+                <div class="text-white text-[1.1rem] font-medium" data-aos="fade-up" >
                     With over 20 creative sessions
                 </div>
             </div>
             <div class="flex flex-wrap gap-10 sm:gap-12 w-[90%] md:w-[85%] lg:w-[80%] mx-auto my-[5rem] lg:my-[10rem]">
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-4" data-aos="zoom-in" >
                     <img class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]" src="./images/map-icon.svg" alt="" />
                     <div>
                         <div class="text-white font-bold text-[1.1rem]">Location</div>
                         <p class="text-gray-200 font-medium">Edwards Rd Cininnati,OH</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-4"  data-aos="zoom-in" >
                     <img class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]" src="./images/speaker-icon.svg" alt="" />
                     <div>
                         <div class="text-white font-bold text-[1.1rem]">Speaker</div>
                         <p class="text-gray-200 font-medium">24 Professional Speakers</p>
                     </div>
                 </div>
-                <button class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.1rem] font-bold w-40 px-4 py-3  rounded-[8px]">
+                <button class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.1rem] font-bold w-40 px-4 py-3  rounded-[8px]" data-aos="fade-up" data-aos-delay="300">
             Buy Tickets
           </button>
             </div>
@@ -140,302 +159,333 @@
 
     <!-- About Us -->
 
-    <section id="about" class="py-24 bg-white" >
+    <section id="about"  class="py-24 bg-white dark:bg-black dark:text-white" >
       <div
         class="md:flex md:flex-row md:gap-12 w-[90%] sm:w-[80%] lg:w-[75%] mx-auto md:justify-between"
       >
-        <div class="flex max-w-[500px] md:max-w-[360px] lg:max-w-[500px] flex-col gap-5 items-center" data-aos-delay="400" data-aos="fade-up">
+        <div class="flex max-w-[500px] md:max-w-[360px] lg:max-w-[500px] flex-col gap-5 items-center"data-aos="fade-down" 
+         >
           <div
             class="text-[1.7rem] sm:text-[2rem] md:text-[2.4rem] lg:text-[2.8rem]  font-medium sm:font-semibold lg:font-bold"
+            data-aos="zoom-in" 
+           
           >
             UX, UI, Interaction, Product Design & Research.
           </div>
-          <p class="text-gray-500 text-[1.02rem] sm:text-[1.1rem]  lg:text-[1.3rem] font-medium ">
+          <p class="text-gray-500 dark:text-gray-300  text-[1.02rem] sm:text-[1.1rem]  lg:text-[1.3rem] font-medium " data-aos="fade-right" 
+         >
             UX strategy is the plan and approach for a digital product. UX
             strategies help businesses translate their intended user experience
             to every touchpoint.
           </p>
-          <p class="text-gray-500 text-[1.02rem] sm:text-[1.1rem] lg:text-[1.3rem] font-medium ">
+          <p class="text-gray-500 dark:text-gray-300  text-[1.02rem] sm:text-[1.1rem] lg:text-[1.3rem] font-medium " data-aos="flip-down" 
+         >
             Visual design is the use of imagery, color, and form to enhance
             usability and improve the user experience.
           </p>
         </div>
         <div
-          class="my-9 md:pl-10 flex flex-col justify-start lg:max-w-[500px] " data-aos-delay="600" data-aos="fade-up"
+          class="my-9 md:pl-10 flex flex-col justify-start lg:max-w-[500px] " data-aos="fade-down" 
+         
         >
-          <div class="text-[1.1rem] sm:text-[1.2rem] md:text-[1.4rem] font-medium md:font-semibold mb-10">EVENT SPONSORS</div>
+          <div class="text-[1.1rem] sm:text-[1.2rem] md:text-[1.4rem] font-medium md:font-semibold mb-10"  data-aos="zoom-in" 
+           data-aos-delay="700">EVENT SPONSORS</div>
           <div
             class="flex flex-wrap flex-1 gap-6  items-start justify-start"
           >
-            <img class="text-gray-500 h-8" src="./images/sponser1.svg" alt="" />
-            <img class="text-gray-500 h-8" src="./images/sponser2.svg" alt="" />
-            <img class="text-gray-500 h-8" src="./images/sponser3.svg" alt="" />
-            <img class="text-gray-500 h-8" src="./images/sponser4.svg" alt="" />
+            <img class="text-gray-500 h-8" data-aos="fade-down" 
+             data-aos-delay="500" src="./images/sponser1.svg" alt="" />
+            <img class="text-gray-500 h-8" data-aos="fade-down" 
+             data-aos-delay="700" src="./images/sponser2.svg" alt="" />
+            <img class="text-gray-500 h-8" data-aos="fade-down" 
+             data-aos-delay="700" src="./images/sponser3.svg" alt="" />
+            <img class="text-gray-500 h-8" data-aos="fade-down" 
+             data-aos-delay="800" src="./images/sponser4.svg" alt="" />
           </div>
         </div>
-      </div>
-      <div>
-        
-      </div>
     </section>
+     <!-- Scroll Up Button-->
+     <a href="#hero" class="fixed bottom-8 right-8 z-50">
+        <button class="neumorphic-btn  rounded-full p-4 bg-opacity-75 text-white bg-orange shadow-lg hover:bg-opacity-100 hover:bg-opacity-100 hover:-translate-y-2 transition-transform duration-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          class="w-5 h-5 "
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
+    </a>
+     <!-- team presentaion  -->
+     <section  class="relative w-full py-40 text-white bg-orange registration-container bg-parallax">
+    <!-- Video section -->
+    <div class="relative w-full flex justify-center items-center">
+        <button id="videoButton" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black py-7 px-8 rounded-full">
+           <i class="fa-solid fa-play font-bold text-xl"></i>
+        </button>
+    </div>
+</section>
+
+<!-- Modal for Video -->
+<div id="videoModal"  class="fixed inset-0 bg-black bg-opacity-75 hidden items-center justify-center z-50">
+    <div class="relative w-full h-full md:w-2/3 lg:w-1/2">
+        <!-- Video element -->
+        <!-- <video id="html5Video" class="w-full h-full" controls>
+            <source src="https://www.youtube.com/watch?v=Sc64ZiW2xPA" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <iframe class="w-[700px] h-full" src="https://www.youtube.com/embed/Sc64ZiW2xPA?si=W7psTOCRYRzaBMfp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button id="closeModal" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+    </div>
+</div>
 
     <!-- topics start -->
-
-    <section id="topic" class="main-top-topic py-20">
-        <div class="top-topic">
-            <div class="img-topic">
-                <img src="https://mutationmedia.net/FOXECONF/assets/svg/topic-icon.svg" />
+    <section   id="topic" class="dark:bg-black pb-16">
+        <div class="main-top-topic py-20 ">
+            <div class="top-topic" data-aos="fade-down" data-aos-duration="400">
+                <div class="img-topic">
+                    <img src="https://mutationmedia.net/FOXECONF/assets/svg/topic-icon.svg" />
+                </div>
+                <h1 class="head-topics my-4 dark:text-white">Topics Covered</h1>
+                <h4 class="topic-para mb-8 dark:text-gray-300 ">
+                    Whether you’re new to the speaking field or a seasoned pro you’ll connect with old colleagues and make valuable new friends.
+                </h4>
             </div>
-            <h1 class="head-topics my-4">Topics Covered</h1>
-            <h4 class="topic-para mb-8">
-                Whether you’re new to the speaking field or a seasoned pro you’ll connect with old colleagues and make valuable new friends.
-            </h4>
-    </section>
-    <div class="boxes">
-        <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500"class="p-6">
-            <img class="logo"  src="https://mutationmedia.net/FOXECONF/assets/svg/speedometer-icon.svg" />
-            <h1 class="box-head">UX Strategy</h1>
-            <h1 class="box-para">
-                UX strategy is the plan and approach for a digital product. UX strategies help businesses translate their intended user experience to every touchpoint.
-            </h1>
         </div>
-        <div data-aos="flip-up" data-aos-delay="700" data-aos-duration="1500">
-          <img
-            class="logo"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/target-icon.svg"
-          />
-          <h1 class="box-head">Information Architecture</h1>
-          <h1 class="box-para">
-            IA is a blueprint of the design structure which can be generated
-            into wireframes and sitemaps of the project. UX designers use them
-            as the basic materials so that they could plan navigation system.
-          </h1>
+        <div class="boxes">
+            <div class="glass_morphism_cards dark:shadow-[0_5px_15px_rgba(255,255,255,0.4)] p-6 " data-aos="fade-up"  data-aos-duration="800">
+                <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/speedometer-icon.svg" />
+                <h1 class="box-head">UX Strategy</h1>
+                <h1 class="box-para  dark:text-white ">
+                    UX strategy is the plan and approach for a digital product. UX strategies help businesses translate their intended user experience to every touchpoint.
+                </h1>
+            </div>
+            <div class="glass_morphism_cards dark:shadow-lg" data-aos="fade-up"  data-aos-duration="800">
+                <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/target-icon.svg" />
+                <h1 class="box-head">Information Architecture</h1>
+                <h1 class="box-para">
+                    IA is a blueprint of the design structure which can be generated into wireframes and sitemaps of the project. UX designers use them as the basic materials so that they could plan navigation system.
+                </h1>
+            </div>
+            <div class="glass_morphism_cards dark:shadow-[0_4px_6px_rgba(255,255,255,0.4)]" data-aos="fade-up"  data-aos-duration="800">
+                <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/clock-icon.svg" />
+                <h1 class="box-head">Content Strategy</h1>
+                <h1 class="box-para">
+                    Content strategy focuses on the planning, creation, delivery, and governance of content.
+                </h1>
+            </div>
+            <div class="glass_morphism_cards dark:shadow-[0_4px_6px_rgba(255,255,255,0.4)]" data-aos="fade-up"  data-aos-duration="800">
+                <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/idea-icon.svg" />
+                <h1 class="box-head">User Research</h1>
+                <h1 class="box-para">
+                    User research focuses on understanding user behaviors, needs, and motivations through observation techniques.
+                </h1>
+            </div>
+            <div class="glass_morphism_cards dark:shadow-[0_4px_6px_rgba(255,255,255,0.4)]" data-aos="fade-up"  data-aos-duration="800">
+                <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/settings-icon.svg" />
+                <h1 class="box-head">Visual Design</h1>
+                <h1 class="box-para">
+                    Visual design is the use of imagery, color, shapes, typography, and form to enhance usability and improve the user experience.
+                </h1>
+            </div>
+            <div class="glass_morphism_cards dark:shadow-[0_4px_6px_rgba(255,255,255,0.4)]" data-aos="fade-up"  data-aos-duration="800">
+                <img class="logo" src="https://mutationmedia.net/FOXECONF/assets/svg/dollarsun-icon.svg" />
+                <h1 class="box-head">Visual Design</h1>
+                <h1 class="box-para">
+                    User experience metrics focus on ease of use. Usability is familiar territory and something that UX teams do well so this makes sense as a starting point.
+                </h1>
+            </div>
         </div>
-        <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500">
-          <img
-            class="logo"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/clock-icon.svg"
-          />
-          <h1 class="box-head">Content Strategy</h1>
-          <h1 class="box-para">
-            Content strategy focuses on the planning, creation, delivery, and
-            governance of content.
-          </h1>
-        </div>
-        <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500" >
-          <img
-            class="logo"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/idea-icon.svg"
-          />
-          <h1 class="box-head">User Research</h1>
-          <h1 class="box-para">
-            User research focuses on understanding user behaviors, needs, and
-            motivations through observation techniques.
-          </h1>
-        </div>
-        <div data-aos="flip-up" data-aos-delay="700" data-aos-duration="1500" >
-          <img
-            class="logo"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/settings-icon.svg"
-          />
-          <h1 class="box-head">Visual Design</h1>
-          <h1 class="box-para">
-            Visual design is the use of imagery, color, shapes, typography, and
-            form to enhance usability and improve the user experience.
-          </h1>
-        </div>
-        <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500">
-          <img
-            class="logo"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/dollarsun-icon.svg"
-          />
-          <h1 class="box-head">Visual Design</h1>
-          <h1 class="box-para">
-            User experience metrics focus on ease of use. Usability is familiar
-            territory and something that UX teams do well so this makes sense as
-            a starting point.
-          </h1>
-        </div>
-    </div>
 
-    <button class="blue-button">View all Topics</button>
-    </div>
+        <button class="blue-button">View all Topics</button>
+    </section>
 
     <!-- topics end-->
 
     <!-- speakers start -->
-    <section id="speakers" class="main-top-speaker ">
-        <div class="top-topic ">
-            <div class="img-topic ">
-                <img src="https://mutationmedia.net/FOXECONF/assets/svg/speaker-icon-2.svg" />
+    <section id="speakers" class="dark:bg-black border-y p-20">
+        <div class="main-top-speaker ">
+            <div class="top-topic ">
+                <div class="img-topic ">
+                    <img src="https://mutationmedia.net/FOXECONF/assets/svg/speaker-icon-2.svg" />
+                </div>
+                <h1 class="head-topics my-4 dark:text-white"  data-aos="fade-up" >Main Speakers</h1>
+                <h4 class="topic-para mb-8 dark:text-gray-300 " data-aos="fade-up" >
+                    We are bringing you the perfect combination of content and experience to ignite your heart equip your mind and spark your skill.
+                </h4>
             </div>
-            <h1 class="head-topics my-4">Main Speakers</h1>
-            <h4 class="topic-para mb-8">
-                We are bringing you the perfect combination of content and experience to ignite your heart equip your mind and spark your skill.
-            </h4>
+        </div>
+        <div class="speaker-box">
+            <div data-aos="flip-left" >
+                <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p1.jpg" />
+                <h1 class="speakers-name dark:text-white">Jeremy Spivak</h1>
+                <h1 class="speakers-para dark:text-gray-300 ">CEO, Founder</h1>
+            </div>
+            <div data-aos="flip-left" >
+                <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p2.jpg" />
+                <h1 class="speakers-name dark:text-white">David Taylor</h1>
+                <h1 class="speakers-para dark:text-gray-300">User Research</h1>
+            </div>
+            <div data-aos="flip-left" >
+                <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p3.jpg" />
+                <h1 class="speakers-name dark:text-white">Renee Mu</h1>
+                <h1 class="speakers-para dark:text-gray-300">Content Strategy</h1>
+            </div>
+            <div data-aos="flip-left" >
+                <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p4.jpg" />
+                <h1 class="speakers-name dark:text-white">Melissa Wagner</h1>
+                <h1 class="speakers-para dark:text-gray-300">UX Metrics</h1>
+            </div>
+            <div data-aos="flip-left" >
+                <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p3.jpg" />
+                <h1 class="speakers-name dark:text-white">Renee Mu</h1>
+                <h1 class="speakers-para dark:text-gray-300">Visual Design</h1>
+            </div>
+            <div data-aos="flip-left" >
+                <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p1.jpg" />
+                <h1 class="speakers-name dark:text-white">Jeremy Spivak</h1>
+                <h1 class="speakers-para dark:text-gray-300">User Research</h1>
+            </div>
+        </div>
+        <div class="interested">
+            <h1 class="interested-para dark:text-gray-300 mt-3">
+                Interested in attending TechConf
+                <a class="ticket" href="#">Get a Ticket →</a>
+            </h1>
+        </div>
     </section>
-    <div class="speaker-box">
-        <div>
-            <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p1.jpg" />
-            <h1 class="speakers-name">Jeremy Spivak</h1>
-            <h1 class="speakers-para">CEO, Founder</h1>
-        </div>
-        <div>
-            <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p2.jpg" />
-            <h1 class="speakers-name">David Taylor</h1>
-            <h1 class="speakers-para">User Research</h1>
-        </div>
-        <div>
-            <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p3.jpg" />
-            <h1 class="speakers-name">Renee Mu</h1>
-            <h1 class="speakers-para">Content Strategy</h1>
-        </div>
-        <div>
-            <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p4.jpg" />
-            <h1 class="speakers-name">Melissa Wagner</h1>
-            <h1 class="speakers-para">UX Metrics</h1>
-        </div>
-        <div>
-            <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p3.jpg" />
-            <h1 class="speakers-name">Renee Mu</h1>
-            <h1 class="speakers-para">Visual Design</h1>
-        </div>
-        <div>
-            <img class="circle" src="https://mutationmedia.net/FOXECONF/assets/img/p1.jpg" />
-            <h1 class="speakers-name">Jeremy Spivak</h1>
-            <h1 class="speakers-para">User Research</h1>
-        </div>
-    </div>
-    <div class="interested">
-        <h1 class="interested-para">
-            Interested in attending TechConf
-            <a class="ticket" href="#">Get a Ticket →</a>
-        </h1>
-    </div>
-    </div>
-
-    </div>
-
-    </div>
     <!-- speakers end -->
 
+
+
+
     <!-- Conference Schedule -->
-    <section class="md:max-w-6xl mx-auto md:p-20 md:p-10 p-6" id="schedule">
-      <div class="flex flex-col justify-center items-center">
-        <div
-          class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center"
-        >
-          <img
-            class="w-8"
-            src="https://mutationmedia.net/FOXECONF/assets/svg/schedule-icon.svg"
-            alt=""
-          />
+    <section class="md:p-20 md:p-10 p-6 dark:bg-black" id="schedule">
+      <div class="md:max-w-6xl mx-auto" data-aos="fade-up">
+
+        <div class="flex flex-col justify-center items-center" data-aos="fade-up">
+          <div
+            class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center" data-aos="zoom-in"
+          >
+            <img
+              class="w-8"
+              src="https://mutationmedia.net/FOXECONF/assets/svg/schedule-icon.svg"
+              alt=""
+            />
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 md:pb-3  dark:text-white text-center">Conference Schedule</h2>
+          <p class="text-center text-gray-500 mt-2 lg:px-56 text-center dark:text-gray-300">
+            We are very excited about the program being planned for Events 2019
+            this summer in Cincinati, Ohio.
+          </p>
         </div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center">Conference Schedule</h2>
-        <p class="text-center text-gray-500 mt-2 lg:px-56 text-center">
-          We are very excited about the program being planned for Events 2024
-          this summer in Cincinati, Ohio.
-        </p>
+  
+        <!-- Tab Menu with Neumorphism -->
+        <div class="w-full mt-8 bg-secondaryBlue"  data-aos="fade-left">
+          <div class="grid-cols-3 md:grid-cols-5 grid text-white">
+            <button class="py-6 px-5 bg-orange w-full font-semibold" data-aos="fade-right">
+              Day 1
+              <span class="lg:inline-flex text-xs font-normal hidden">Nov 29, 2024</span>
+            </button>
+            <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold" data-aos="fade-right" >
+              Day 2 <span class="lg:inline-flex text-xs font-normal hidden">Nov 30, 2024</span>
+            </button>
+            <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold" data-aos="fade-right" >
+              Day 3 <span class="lg:inline-flex text-xs font-normal hidden">Nov 31, 2024</span>
+            </button>
+              </div>
+          </div>
+  
+          <!-- Schedule Table with Glassmorphism -->
+          <!-- Container -->
+          <div class="max-w-4xl mx-auto mt-10 p-4 glassmorphic shadow-md rounded-lg bg-white" data-aos="fade-up">
+              <!-- Header for desktop and tablet view -->
+              <div class="hidden sm:grid grid-cols-3 gap-4 p-4 border-b border-gray-200">
+                  <div class="font-semibold text-gray-500">Event Topics</div>
+                  <div class="font-semibold text-gray-500">Time</div>
+                  <div class="font-semibold text-gray-500">Speaker</div>
+              </div>
+  
+              <!-- Event Rows -->
+              <div class="sm:grid sm:grid-cols-3 gap-4 p-4 border-b border-gray-200" data-aos="fade-up" >
+                  <div class="font-semibold text-lg text-gray-700 sm:hidden">
+                      Foxe Opening
+                  </div>
+                  <div class="sm:hidden text-gray-500 mb-2">08:00 - 10:00</div>
+                  <div class="sm:hidden flex items-center mb-2">
+                      <img src="https://i.pravatar.cc/40?img=1" alt="Renee Mu" class="w-10 h-10 rounded-full mr-2" />
+                      <span class="font-semibold">Renee Mu</span>
+                  </div>
+                  <div class="hidden sm:block">Foxe Opening</div>
+                  <div class="hidden sm:block">08:00 - 10:00</div>
+                  <div class="hidden sm:flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=1" alt="Renee Mu" class="w-10 h-10 rounded-full mr-2" />
+                      <span>Renee Mu</span>
+                  </div>
+              </div>
+  
+              <div class="sm:grid sm:grid-cols-3 gap-4 p-4 bg-gray-50 border-b border-gray-200" data-aos="fade-up" >
+                  <div class="font-semibold text-lg text-gray-700 sm:hidden">
+                      UX Strategy
+                  </div>
+                  <div class="sm:hidden text-gray-500 mb-2">10:30 - 12:30</div>
+                  <div class="sm:hidden flex items-center mb-2">
+                      <img src="https://i.pravatar.cc/40?img=2" alt="David Taylor" class="w-10 h-10 rounded-full mr-2" />
+                      <span class="font-semibold">David Taylor</span>
+                  </div>
+                  <div class="hidden sm:block">UX Strategy</div>
+                  <div class="hidden sm:block">10:30 - 12:30</div>
+                  <div class="hidden sm:flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=2" alt="David Taylor" class="w-10 h-10 rounded-full mr-2" />
+                      <span>David Taylor</span>
+                  </div>
+              </div>
+  
+              <div class="sm:grid sm:grid-cols-3 gap-4 p-4 border-b border-gray-200" data-aos="fade-up" >
+                  <div class="font-semibold text-lg text-gray-700 sm:hidden">
+                      User Research
+                  </div>
+                  <div class="sm:hidden text-gray-500 mb-2">13:00 - 14:00</div>
+                  <div class="sm:hidden flex items-center mb-2">
+                      <img src="https://i.pravatar.cc/40?img=3" alt="Jeremy Spivak" class="w-10 h-10 rounded-full mr-2" />
+                      <span class="font-semibold">Jeremy Spivak</span>
+                  </div>
+                  <div class="hidden sm:block">User Research</div>
+                  <div class="hidden sm:block">13:00 - 14:00</div>
+                  <div class="hidden sm:flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=3" alt="Jeremy Spivak" class="w-10 h-10 rounded-full mr-2" />
+                      <span>Jeremy Spivak</span>
+                  </div>
+              </div>
+  
+              <div class="sm:grid sm:grid-cols-3 gap-4 p-4 bg-gray-50" data-aos="fade-up" >
+                  <div class="font-semibold text-lg text-gray-700 sm:hidden">
+                      Lunch Time
+                  </div>
+                  <div class="sm:hidden text-gray-500 mb-2">14:30 - 15:30</div>
+                  <div class="sm:hidden flex items-center mb-2">
+                      <span class="font-semibold">-</span>
+                  </div>
+                  <div class="hidden sm:block">Lunch Time</div>
+                  <div class="hidden sm:block">14:30 - 15:30</div>
+                  <div class="hidden sm:block">-</div>
+              </div>
+          </div>
       </div>
-
-      <!-- Tab Menu with Neumorphism -->
-      <div class="w-full mt-8 bg-secondaryBlue">
-        <div class="grid-cols-3 md:grid-cols-5 grid text-white">
-          <button class="py-6 px-5 bg-orange w-full font-semibold">
-            Day 1
-            <span class="lg:inline-flex text-xs font-normal hidden">November 29, 2024</span>
-          </button>
-          <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
-            Day 2 <span class="lg:inline-flex text-xs font-normal hidden">November 30, 2024</span>
-          </button>
-          <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
-            Day 3 <span class="lg:inline-flex text-xs font-normal hidden">November 31, 2024</span>
-          </button>
-            </div>
-        </div>
-
-        <!-- Schedule Table with Glassmorphism -->
-        <!-- Container -->
-        <div class="max-w-4xl mx-auto mt-10 p-4 glassmorphic shadow-md rounded-lg bg-white">
-            <!-- Header for desktop and tablet view -->
-            <div class="hidden sm:grid grid-cols-3 gap-4 p-4 border-b border-gray-200">
-                <div class="font-semibold text-gray-500">Event Topics</div>
-                <div class="font-semibold text-gray-500">Time</div>
-                <div class="font-semibold text-gray-500">Speaker</div>
-            </div>
-
-            <!-- Event Rows -->
-            <div class="sm:grid sm:grid-cols-3 gap-4 p-4 border-b border-gray-200">
-                <div class="font-semibold text-lg text-gray-700 sm:hidden">
-                    Foxe Opening
-                </div>
-                <div class="sm:hidden text-gray-500 mb-2">08:00 - 10:00</div>
-                <div class="sm:hidden flex items-center mb-2">
-                    <img src="https://i.pravatar.cc/40?img=1" alt="Renee Mu" class="w-10 h-10 rounded-full mr-2" />
-                    <span class="font-semibold">Renee Mu</span>
-                </div>
-                <div class="hidden sm:block">Foxe Opening</div>
-                <div class="hidden sm:block">08:00 - 10:00</div>
-                <div class="hidden sm:flex items-center">
-                    <img src="https://i.pravatar.cc/40?img=1" alt="Renee Mu" class="w-10 h-10 rounded-full mr-2" />
-                    <span>Renee Mu</span>
-                </div>
-            </div>
-
-            <div class="sm:grid sm:grid-cols-3 gap-4 p-4 bg-gray-50 border-b border-gray-200">
-                <div class="font-semibold text-lg text-gray-700 sm:hidden">
-                    UX Strategy
-                </div>
-                <div class="sm:hidden text-gray-500 mb-2">10:30 - 12:30</div>
-                <div class="sm:hidden flex items-center mb-2">
-                    <img src="https://i.pravatar.cc/40?img=2" alt="David Taylor" class="w-10 h-10 rounded-full mr-2" />
-                    <span class="font-semibold">David Taylor</span>
-                </div>
-                <div class="hidden sm:block">UX Strategy</div>
-                <div class="hidden sm:block">10:30 - 12:30</div>
-                <div class="hidden sm:flex items-center">
-                    <img src="https://i.pravatar.cc/40?img=2" alt="David Taylor" class="w-10 h-10 rounded-full mr-2" />
-                    <span>David Taylor</span>
-                </div>
-            </div>
-
-            <div class="sm:grid sm:grid-cols-3 gap-4 p-4 border-b border-gray-200">
-                <div class="font-semibold text-lg text-gray-700 sm:hidden">
-                    User Research
-                </div>
-                <div class="sm:hidden text-gray-500 mb-2">13:00 - 14:00</div>
-                <div class="sm:hidden flex items-center mb-2">
-                    <img src="https://i.pravatar.cc/40?img=3" alt="Jeremy Spivak" class="w-10 h-10 rounded-full mr-2" />
-                    <span class="font-semibold">Jeremy Spivak</span>
-                </div>
-                <div class="hidden sm:block">User Research</div>
-                <div class="hidden sm:block">13:00 - 14:00</div>
-                <div class="hidden sm:flex items-center">
-                    <img src="https://i.pravatar.cc/40?img=3" alt="Jeremy Spivak" class="w-10 h-10 rounded-full mr-2" />
-                    <span>Jeremy Spivak</span>
-                </div>
-            </div>
-
-            <div class="sm:grid sm:grid-cols-3 gap-4 p-4 bg-gray-50">
-                <div class="font-semibold text-lg text-gray-700 sm:hidden">
-                    Lunch Time
-                </div>
-                <div class="sm:hidden text-gray-500 mb-2">14:30 - 15:30</div>
-                <div class="sm:hidden flex items-center mb-2">
-                    <span class="font-semibold">-</span>
-                </div>
-                <div class="hidden sm:block">Lunch Time</div>
-                <div class="hidden sm:block">14:30 - 15:30</div>
-                <div class="hidden sm:block">-</div>
-            </div>
-        </div>
     </section>
 
     <!-- Countdown Section with Parallax Scrolling -->
-    <section class="relative w-full py-20 wavy-bg bg-orange bg-img-timer " >
-      <div class="flex flex-col justify-center items-center ">
+    <section class="relative w-full py-20 text-white wavy-bg bg-orange bg-img-timer bg-parallax" >
+      <div class="flex flex-col justify-center items-center " data-aos="fade-up" data-aos-duration="1200">
         <div
-          class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center"
+          class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center"  data-aos="zoom-in" 
         >
           <img
             class="w-10"
@@ -444,260 +494,263 @@
           />
         </div>
 
-        <p class="text-2xl md:text-3xl font-semibold text-center md:px-24">
+        <p class="text-2xl md:text-3xl font-semibold text-center md:px-24" data-aos="fade-up" >
           Time left until the conference start
         </p>
-        <p class="mt-2 text-center md:w-1/2 font-semibold">
+        <p class="mt-2 text-center md:w-1/2 font-semibold" data-aos="fade-up">
             29 to 31 November 2024 with over 80 sessions - Cincinnati, Ohio
         </p>
-        <div class="count-down max-w-full md:p-6 mt-6 ">
+        <div class="count-down max-w-full md:p-6 mt-6 " data-aos="zoom-in-up" data-aos-delay="500">
           <div class="flipdown m-auto max-w-full flex justify-center content-center" id="flipdown"></div>
         </div>
         </div>
     </section>
-
-    
-
     <!-- Conference Tickets Section with Glassmorphism -->
-    <section class="max-w-7xl mx-auto px-4 py-12" id="ticket">
+    <section class="px-4 py-12 dark:bg-black" id="ticket">
         <!-- Title and Subtitle -->
-        <div class="flex flex-col justify-center items-center mb-10">
-            <div class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center">
-                <img class="w-8" src="https://i.ibb.co/mzDpQvm/ticket-icon.png" alt="" />
-            </div>
+         <div class="max-w-7xl mx-auto">
+           <div class="flex flex-col justify-center items-center mb-10">
+               <div class="m-8 w-14 bg-blue-100 rounded-full h-14 flex justify-center items-center" data-aos="zoom-in" data-aos-duration="600">
+                   <img class="w-8" src="https://i.ibb.co/mzDpQvm/ticket-icon.png" alt="" />
+               </div>
+   
+               <h2 class="text-2xl md:text-4xl font-bold text-gray-800 dark:text-white text-center" data-aos="fade-up" data-aos-duration="800">Conference Tickets</h2>
+               <p class="text-gray-500 mt-4 text-center dark:text-gray-300"  data-aos="fade-up"  data-aos-duration="800">
+                   Reserve your e-ticket for the event of the year. Don't miss it!
+               </p>
+           </div>
+   
+         <!-- Ticket Cards -->
+         <div class="flex gap-6 justify-center items-center flex-col md:flex-row ">
+           <!-- Standard Pass -->
+           <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 "data-aos="flip-up" data-aos-duration="700"> 
+             <div class="text-center">
+               <span class="text-sm text-orange uppercase font-semibold"
+                 >Standard Pass</span
+               >
+               <p class="text-5xl font-bold mt-4 text-gray-800 dark:text-white">$129</p>
+               <p class="text-gray-500 dark:text-gray-300">1 Day ticket</p>
+             </div>
+             <!-- Features -->
+             <ul class="mt-6 space-y-4 dark:text-white" data-aos="fade-right" >
+               <li class="flex items-center space-x-3">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-orange"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Main Event speeches</span>
+               </li>
+               <li class="flex items-center space-x-3">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-orange"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>All areas access</span>
+               </li>
+               <li class="flex items-center space-x-3">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-orange"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Lunch on day 1</span>
+               </li>
+             </ul>
+             <!-- Button -->
+             <div class="text-center mt-8">
+               <button
+                 class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
+                 data-aos="zoom-in" data-aos-delay="500"
+               >
+                 Buy ticket
+               </button>
+                       </div>
+                   </div>
+   
+           <!-- Silver Pass -->
+           <div class="glassmorphic dark:bg-white shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 "data-aos="flip-up" data-aos-duration="700"> 
+             <div class="text-center">
+               <span class="text-sm text-secondaryBlue uppercase font-semibold"
+                 >Silver Pass</span
+               >
+               <p class="text-5xl font-bold mt-4 text-gray-800 ">$329</p>
+               <p class="text-gray-600">All Days ticket</p>
+             </div>
+             <!-- Features -->
+             <ul class="mt-6 space-y-4" data-aos="fade-left" >
+               <li class="flex items-center space-x-3">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-secondaryBlue"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Main Event speeches</span>
+               </li>
+               <li class="flex items-center space-x-3">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-secondaryBlue"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>Limited areas access</span>
+               </li>
+               <li class="flex items-center space-x-3">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-secondaryBlue"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M5 13l4 4L19 7"
+                   />
+                 </svg>
+                 <span>All days lunch</span>
+               </li>
+             </ul>
+             <!-- Button -->
+             <div class="text-center mt-8">
+               <button
+                 class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
+                 data-aos="zoom-in" data-aos-delay="300"
+               >
+                 Buy ticket
+               </button>
+                           </div>
+                       </div>
+                   </div>
 
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-800 text-center">Conference Tickets</h2>
-            <p class="text-gray-500 mt-2 text-center">
-                Reserve your e-ticket for the event of the year. Don't miss it!
-            </p>
-        </div>
-
-      <!-- Ticket Cards -->
-      <div class="flex gap-6 justify-center items-center flex-col md:flex-row">
-        <!-- Standard Pass -->
-        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 " data-aos-delay="300" data-aos="flip-up"> 
-          <div class="text-center">
-            <span class="text-sm text-orange uppercase font-semibold"
-              >Standard Pass</span
-            >
-            <p class="text-5xl font-bold mt-4 text-gray-800">$129</p>
-            <p class="text-gray-500">1 Day ticket</p>
-          </div>
-          <!-- Features -->
-          <ul class="mt-6 space-y-4">
-            <li class="flex items-center space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-6 h-6 text-orange"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>Main Event speeches</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-6 h-6 text-orange"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>All areas access</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-6 h-6 text-orange"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>Lunch on day 1</span>
-            </li>
-          </ul>
-          <!-- Button -->
-          <div class="text-center mt-8">
-            <button
-              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
-            >
-              Buy ticket
-            </button>
-                    </div>
-                </div>
-
-        <!-- Silver Pass -->
-        <div class="glassmorphic shadow-lg rounded-lg p-8 border md:py-8 lg:px-24 w-full md:w-96 mx-4 " data-aos-delay="300" data-aos="flip-up"> 
-          <div class="text-center">
-            <span class="text-sm text-secondaryBlue uppercase font-semibold"
-              >Silver Pass</span
-            >
-            <p class="text-5xl font-bold mt-4 text-gray-800">$329</p>
-            <p class="text-gray-500">All Days ticket</p>
-          </div>
-          <!-- Features -->
-          <ul class="mt-6 space-y-4">
-            <li class="flex items-center space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondaryBlue"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>Main Event speeches</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondaryBlue"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>Limited areas access</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondaryBlue"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>All days lunch</span>
-            </li>
-          </ul>
-          <!-- Button -->
-          <div class="text-center mt-8">
-            <button
-              class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
-            >
-              Buy ticket
-            </button>
-                        </div>
-                    </div>
-                </div>
+         </div>
     </section>
 
     <!-- Registration Section -->
-    <section class="registration-container bg-cover bg-center flex justify-center items-center">
+
+    <section class="bg-cover bg-center flex justify-center items-center registration-container bg-parallax"  data-aos="fade-up" data-aos-duration="700">
     
         <div class="container flex flex-col lg:flex-row justify-between md:justify-evenly items-center h-screen bg-cover bg-center p-6 " >
         
             <!-- Left Section -->
-            <div class="text-white mb-10 md:mb-0 md:max-w-lg text-center lg:text-left">
+            <div class="text-white mb-10 md:mb-0 md:max-w-lg text-center lg:text-left" data-aos="fade-right" data-aos-duration="700">
                 <span class="font-bold mb-6 leading-tight lg:text-xl">29 To 31 November 2024</span>
                 <h1 class="display-4 lg:text-6xl leading-tight sm:text-4xl text-2xl font-bold md:mt-2">Register your coming at TechConf</h1>
             </div>
 
             <!-- Right Section: Registration Form -->
-            <div class="bg-white rounded-lg shadow-lg p-8 w-full md:w-[350px] lg:w-[350px]">
+            <div class="bg-white rounded-lg shadow-lg p-8 w-full md:w-[350px] lg:w-[350px]"  data-aos="fade-left" data-aos-duration="700">
                 <form class="space-y-6">
                     <h3 class="text-2xl font-bold text-center">Register your coming</h3>
-                    <input type="text" placeholder="Enter your username" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange">
-                    <input type="email" placeholder="Enter your email address" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange">
-                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange">
+                    <input type="text" placeholder="Enter your username" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange" data-aos="fade-up" data-aos-duration="700">
+                    <input type="email" placeholder="Enter your email address" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange" data-aos="fade-up" data-aos-duration="700">
+                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange" data-aos="fade-up" data-aos-duration="700">
                         <option value="" disabled selected>Choose a ticket</option>
                         <option value="One Day">One Day Ticket</option>
                         <option value="All Day">All Day Ticket</option>
                         
                     </select>
-                    <button type="submit" class="w-full bg-orange text-white font-semibold py-3 rounded-lg hover:bg-darkorange transition-colors">Get your ticket</button>
+                    <button type="submit" class="w-full bg-orange text-white font-semibold py-3 rounded-lg hover:bg-darkorange transition-colors" data-aos="fade-up" data-aos-duration="700">Get your ticket</button>
                 </form>
             </div>
         </div>
     </section>
 
   <!-- Carousel Section -->
-  <section class="relative z-10 p-12"> 
+  <section class="relative dark:bg-black px-12 pt-12 pb-40 " data-aos="fade-up" data-aos-duration="700"> 
     <div class="max-w-6xl mx-auto px-4 md:px-0 relative w-full overflow-hidden flex flex-col justify-center">
         <!-- Text Content -->
-        <div class="self-center md:w-1/2 pb-8">
-            <h2 class="text-4xl font-bold text-gray-900 text-center">Memories From The Events</h2>
+        <div class="self-center md:w-1/2" data-aos="fade-down" data-aos-duration="700">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 dark:text-white">Memories From The Events</h2>
     
         </div>
       <!-- Carousel Wrapper with Fixed Height -->
       <div class="relative h-[400px] w-full md:h-[500px] lg:h-[600px] pb-[5rem]">
         <!-- Carousel Images -->
-        <div class="carousel-item active h-full w-full">
+        <div class="carousel-item active h-full w-full" data-aos="fade-in" data-aos-duration="700">
           <img src="./images/carousal-1.jpg" alt="Nature" class="object-cover h-full w-full">
           <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
             <h3 class="text-lg md:text-xl lg:text-2xl font-bold">InfoShare</h3>
             <p class="text-xs md:text-sm">Explore the beauty of Information.</p>
           </div>
         </div>
-        <div class="carousel-item h-full w-full">
+        <div class="carousel-item h-full w-full" data-aos="fade-in" data-aos-duration="700">
           <img src="./images/carousal-2.jpg" alt="City" class="object-cover h-full w-full">
           <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
             <h3 class="text-lg md:text-xl lg:text-2xl font-bold">Linkedin</h3>
             <p class="text-xs md:text-sm">Discover amazing Networks.</p>
           </div>
         </div>
-        <div class="carousel-item h-full w-full">
+        <div class="carousel-item h-full w-full" data-aos="fade-in" data-aos-duration="700">
           <img src="./images/carousal-3.jpg" alt="Mountains" class="object-cover h-full w-full">
           <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
             <h3 class="text-lg md:text-xl lg:text-2xl font-bold">Web Summit</h3>
             <p class="text-xs md:text-sm">Explore the beauty of Web.</p>
           </div>
         </div>
-        <div class="carousel-item h-full w-full">
+        <div class="carousel-item h-full w-full" data-aos="fade-in" data-aos-duration="700">
             <img src="./images/carousal-4.jpg" alt="Mountains" class="object-cover h-full w-full">
             <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
               <h3 class="text-lg md:text-xl lg:text-2xl font-bold">Vanguard</h3>
               <p class="text-xs md:text-sm">Explore the WebSecurity.</p>
             </div>
         </div>
-        <div class="carousel-item h-full w-full">
+        <div class="carousel-item h-full w-full" data-aos="fade-in" data-aos-duration="700">
             <img src="./images/carousal-5.webp" alt="Mountains" class="object-cover h-full w-full">
             <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
               <h3 class="text-lg md:text-xl lg:text-2xl font-bold">ProductHunt</h3>
               <p class="text-xs md:text-sm">Explore amazing new Products.</p>
             </div>
         </div>
-        <div class="carousel-item h-full w-full">
+        <div class="carousel-item h-full w-full" data-aos="fade-in" data-aos-duration="700">
             <img src="./images/carousal-6.jpg" alt="Mountains" class="object-cover h-full w-full">
             <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4">
               <h3 class="text-lg md:text-xl lg:text-2xl font-bold">DataHub</h3>
@@ -706,13 +759,13 @@
         </div>
 
         <!-- Carousel Controls -->
-        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-40 rounded-full p-3 md:p-4 lg:p-5 shadow-lg text-gray-900 hover:bg-opacity-70 hover:scale-110 transition-all duration-300">
+        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-40 rounded-full p-3 md:p-4 lg:p-5 shadow-lg text-gray-900 hover:bg-opacity-70 hover:scale-110 transition-all duration-300" data-aos="fade-in" data-aos-duration="700">
             <!-- Left Arrow Icon -->
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
           </button>
-          <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-40 rounded-full p-3 md:p-4 lg:p-5 shadow-lg text-gray-900 hover:bg-opacity-70 hover:scale-110 transition-all duration-300">
+          <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-40 rounded-full p-3 md:p-4 lg:p-5 shadow-lg text-gray-900 hover:bg-opacity-70 hover:scale-110 transition-all duration-300" data-aos="fade-in" data-aos-duration="700">
             <!-- Right Arrow Icon -->
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -732,80 +785,67 @@
     </div>
   </section>
     
-    <!-- FOOTER -->
-    <footer class="mt-2 bg-bgfooter">
-        <div class="w-1/2 m-auto p-4 text-center bg-white border border-black-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-            <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                Subscribe now to get event news
-            </h5>
-            <form class="flex items-center max-w-lg mx-auto">
-                <label for="voice-search" class="sr-only">Search</label>
-                <div class="w-full">
-                    <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-3.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Email" required />
-                </div>
-                <button type="submit" class="inline-flex items-center py-3.5 px-11 ms-2 text-sm font-medium text-white bg-primegreen rounded-sm border border-primegreen hover:bg-hovergreen">
-            Subscribe
-          </button>
+   
+
+
+   
+    <footer class="bg-gray-900 text-white clear-both">
+        <!-- Subscription Section -->
+        <div class="w-[90%] sm:w-[80%]  md:w-[70%] lg:w-[60%] lg:h-[12rem] relative bottom-20  shadow-lg mx-auto p-6 flex flex-col justify-center items-center bg-white rounded-lg shadow-lg" data-aos="zoom-in" data-aos-duration="800">
+            <h5 class="mb-8 text-2xl font-bold text-gray-900">Subscribe now to get event news</h5>
+            <form class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+                <input type="email" class="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md text-gray-800" placeholder="Email" required>
+                <button type="submit" class="px-6 py-3 bg-orange text-white font-semibold rounded-md hover:bg-darkorange focus:outline-none focus:ring-2 focus:ring-orange">Subscribe</button>
             </form>
         </div>
-        <div class="flex w-1/2 m-auto justify-between my-11">
-            <div class="flex gap-3">
-                <div>
-                    <img src="./images/Caller.png" alt="" />
-                </div>
-                <div>
-                    <p class="text-white">Call Us</p>
-                    <p class="text-white">(831) 870-9911</p>
-                </div>
-            </div>
-            <div class="flex gap-3">
-                <div>
-                    <img src="./images/email.png" alt="" />
-                </div>
-                <div>
-                    <p class="text-white">Email us</p>
-                    <p class="text-white">support@Techconf.net</p>
-                </div>
-            </div>
-            <div class="flex gap-3">
-                <div>
-                    <img src="./images/map.png" alt="" />
-                </div>
-                <div>
-                    <p class="text-white">Address</p>
-                    <p class="text-white">2852 New Delhi</p>
-                </div>
-            </div>
-        </div>
-        <div class="w-1/2 m-auto flex justify-center">
-            <ul class="p-4 flex gap-9 m-auto text-xl">
-                <li>
-                    <i class="fa-brands fa-facebook-f text-gray-500 hover:text-white"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-google text-gray-500 hover:text-white"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-twitter text-gray-500 hover:text-white"></i>
-                </li>
-                <li>
-                    <i class="fa-brands fa-instagram text-gray-500 hover:text-white"></i>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p class="text-white flex justify-center">
-                © 2019 all rights reserved - Techconf.
-            </p>
-            <p class="text-white flex justify-center">
-                A product of Techconf.
-            </p>
-        </div>
-    </footer>
 
-    <!-- aos script -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Contact Info Section -->
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-center pl-8 gap-8 mt-8" data-aos="fade-up" data-aos-duration="800">
+            <!-- Call Us -->
+            <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-duration="800">
+                <img src="images/contact-icon.svg" alt="Phone Icon" class="w-8 h-8">
+                <div>
+                    <p class="text-lg font-semibold">Call Us</p>
+                    <p class="text-sm text-gray-300">(831) 870-9901</p>
+                </div>
+            </div>
+
+            <!-- Email Us -->
+            <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-duration="800">
+                <img src="images/email-icon.svg" alt="Email Icon" class="w-8 h-8">
+                <div>
+                    <p class="text-lg font-semibold">Email Us</p>
+                    <p class="text-sm text-gray-300">support@TechConf.net</p>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-duration="800">
+                <img src="images/location-icon.svg" alt="Address Icon" class="w-8 h-8">
+                <div>
+                    <p class="text-lg font-semibold">Address</p>
+                    <p class="text-sm text-gray-300">Delhi</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="max-w-4xl mx-auto flex justify-center mt-6 space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-google"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <!-- Footer Text -->
+        <div class="mt-6 text-center text-sm text-gray-400" >
+            <p>© 2024 all rights reserved - TechConf.</p>
+            <p>A product of TechConf.</p>
+        </div>
+    </footer> 
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/b7c0508dd7.js" crossorigin="anonymous"></script>
