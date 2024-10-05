@@ -1,7 +1,8 @@
-# Project Title
+# TechConf
+
 
 ## Introduction
-A brief introduction of your project goes here. You may want to cover the purpose of your project, its core functionality, and what problems it solves.
+TechConf is a modern, responsive website designed for a major tech conference, aimed at increasing online visibility and attendee registration. The site integrates the latest UI/UX trends like glassmorphism, parallax scrolling, and dark-light mode toggling. It centralizes event information, includes a countdown timer, social media gallery, and showcases speakers, schedules, and other conference details to enhance the attendee experience.
 
 ## Project Type
 Frontend | Backend | Fullstack
