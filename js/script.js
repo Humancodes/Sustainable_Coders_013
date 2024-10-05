@@ -151,6 +151,35 @@ document.getElementById('videoButton').addEventListener('click', function() {
     });
 });
 
+    // Previous slide
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+      updateCarousel(currentIndex);
+    });
+
+    // Indicator click
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel(currentIndex);
+      });
+    });
+
+    setInterval(nextSlide, 5000);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Unix timestamp (in seconds) to count down to
+      var toDayFromNow = (new Date("Nov 29, 2024 08:00:00").getTime() / 1000) + (3600 / 60 / 60 / 24) - 1;
+      // Set Up FlipDown
+      var flipdown = new FlipDown(toDayFromNow)
+  
+      // Start The Count Down
+      .start()
+      // Do Something When The Countdown Ends
+      .ifEnded(() => {
+          document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+      });
+  });
 // Click button to close modal and stop video
 document.getElementById('closeModal').addEventListener('click', function() {
     const videoModal = document.getElementById('videoModal');

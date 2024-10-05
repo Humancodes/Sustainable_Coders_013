@@ -262,8 +262,10 @@ input:checked + .slider:before {
   transform: translateX(6px); /* Move right by 10px */
 }
 /* timer section  */
-.bg-img-timer {
-  background-image: url("../images/business-2626052_1280.jpg");
+.bg-img-timer{
+  background: url("https://cdn.pixabay.com/photo/2017/03/28/12/17/chairs-2181994_1280.jpg") no-repeat center center fixed;
+    background-size: cover;
+
 }
 
 /* Carousel */
@@ -335,6 +337,40 @@ input:checked + .slider:before {
     padding: 30px 20px;
   }
 }
+
+/* Counter  */
+
+/* .count-down {
+  width: 550px;
+  height: 378px;
+  margin: auto;
+  padding: 20px;
+}
+.count-down .flipdown {
+  margin: auto;
+  width: 600px;
+  margin-top: 30px;
+}
+.count-down h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .count-down {
+      width: 80%;
+      height: 362px;
+  }
+
+  .count-down .flipdown {
+      width: 80%;
+  }
+  .count-down h1 {
+      font-size: 2.5em;
+  }
+} */
 
 /* Mobile */
 @media (max-width: 600px) {

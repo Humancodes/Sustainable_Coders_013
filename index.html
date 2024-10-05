@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans&display=swap"
+            rel="stylesheet">
+        <!-- Style Flipdown -->
+        <link href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <!-- animate.css -->
     <!-- aos -->
@@ -380,13 +392,13 @@
           <div class="grid-cols-3 md:grid-cols-5 grid text-white">
             <button class="py-6 px-5 bg-orange w-full font-semibold" data-aos="fade-right">
               Day 1
-              <span class="lg:inline-flex text-xs font-normal hidden">July 29, 2019</span>
+              <span class="lg:inline-flex text-xs font-normal hidden">Nov 29, 2024</span>
             </button>
             <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold" data-aos="fade-right" >
-              Day 2 <span class="lg:inline-flex text-xs font-normal hidden">July 30, 2019</span>
+              Day 2 <span class="lg:inline-flex text-xs font-normal hidden">Nov 30, 2024</span>
             </button>
             <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold" data-aos="fade-right" >
-              Day 3 <span class="lg:inline-flex text-xs font-normal hidden">July 31, 2019</span>
+              Day 3 <span class="lg:inline-flex text-xs font-normal hidden">Nov 31, 2024</span>
             </button>
               </div>
           </div>
@@ -485,12 +497,12 @@
         <p class="text-2xl md:text-3xl font-semibold text-center md:px-24" data-aos="fade-up" >
           Time left until the conference start
         </p>
-        <p class="mt-2 text-center md:w-1/2"  data-aos="fade-up" >
-          29 to 31 July 2019 with over 80 sessions - Cincinnati, Ohio
+        <p class="mt-2 text-center md:w-1/2 font-semibold" data-aos="fade-up">
+            29 to 31 November 2024 with over 80 sessions - Cincinnati, Ohio
         </p>
-        <div class=" py-8 my-4 mx-10 w-72 sm:w-80 md:w-2/3 md:my-20 bg-white opacity-10" data-aos="zoom-in-up" data-aos-delay="500">
-
-            </div>
+        <div class="count-down max-w-full md:p-6 mt-6 " data-aos="zoom-in-up" data-aos-delay="500">
+          <div class="flipdown m-auto max-w-full flex justify-center content-center" id="flipdown"></div>
+        </div>
         </div>
     </section>
     <!-- Conference Tickets Section with Glassmorphism -->
@@ -701,7 +713,7 @@
     
         </div>
       <!-- Carousel Wrapper with Fixed Height -->
-      <div class="relative h-[400px] w-full md:h-[500px] lg:h-[600px]">
+      <div class="relative h-[400px] w-full md:h-[500px] lg:h-[600px] pb-[5rem]">
         <!-- Carousel Images -->
         <div class="carousel-item active h-full w-full" data-aos="fade-in" data-aos-duration="700">
           <img src="./images/carousal-1.jpg" alt="Nature" class="object-cover h-full w-full">
@@ -837,6 +849,7 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/b7c0508dd7.js" crossorigin="anonymous"></script>
+    <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
 </body>
 
 </html>
