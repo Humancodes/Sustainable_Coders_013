@@ -2,15 +2,13 @@
 
 
 ## Introduction
-TechConf is a modern, responsive website designed for a major tech conference, aimed at increasing online visibility and attendee registration. The site integrates the latest UI/UX trends like glassmorphism, parallax scrolling, and dark-light mode toggling. It centralizes event information, includes a countdown timer, social media gallery, and showcases speakers, schedules, and other conference details to enhance the attendee experience.
+TechConf is a modern, responsive website designed for a major tech conference, aimed at increasing online visibility and attendee registration. The site integrates the latest UI/UX trends like glassmorphism, parallax scrolling, and dark-light mode toggling. It centralizes event information, includes a countdown timer, registration count,  social media gallery, and showcases speakers, schedules, and other conference details to enhance the attendee experience.
 
 ## Project Type
-Frontend | Backend | Fullstack
+Frontend
 
 ## Deplolyed App
-Frontend: https://deployed-site.whatever
-Backend: https://deployed-site.whatever
-Database: https://deployed-site.whatever
+https://techconf-ochre.vercel.app/
 
 ## Directory Structure
 my-app/
