@@ -140,7 +140,7 @@
                     <img class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]" src="./images/map-icon.svg" alt="" />
                     <div>
                         <div class="text-white font-bold text-[1.1rem]">Location</div>
-                        <p class="text-gray-200 font-medium">Edwards Rd Cininnati,OH</p>
+                        <p class="text-gray-200 font-medium">Delhi</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-4"  data-aos="zoom-in" >
@@ -150,9 +150,12 @@
                         <p class="text-gray-200 font-medium">24 Professional Speakers</p>
                     </div>
                 </div>
-                <button class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.1rem] font-bold w-40 px-4 py-3  rounded-[8px]" data-aos="fade-up" data-aos-delay="300">
-            Buy Tickets
-          </button>
+                <a href="#registration">
+                  <button class="border-2 border-white text-white hover:bg-white hover:text-amber-600 bg-transparent text-[1.1rem] font-bold w-40 px-4 py-3  rounded-[8px]" data-aos="fade-up" data-aos-delay="300">
+                    Buy Tickets
+                  </button>
+                </a>
+                
             </div>
         </div>
     </section>
@@ -357,7 +360,7 @@
         <div class="interested">
             <h1 class="interested-para dark:text-gray-300 mt-3">
                 Interested in attending TechConf
-                <a class="ticket" href="#">Get a Ticket →</a>
+                <a class="ticket" href="#registration">Get a Ticket →</a>
             </h1>
         </div>
     </section>
@@ -382,8 +385,8 @@
           </div>
           <h2 class="text-2xl md:text-3xl font-bold text-gray-800 md:pb-3  dark:text-white text-center">Conference Schedule</h2>
           <p class="text-center text-gray-500 mt-2 lg:px-56 text-center dark:text-gray-300">
-            We are very excited about the program being planned for Events 2019
-            this summer in Cincinati, Ohio.
+            We are very excited about the program being planned for Events 2024
+            this summer in Delhi.
           </p>
         </div>
   
@@ -498,7 +501,7 @@
           Time left until the conference start
         </p>
         <p class="mt-2 text-center md:w-1/2 font-semibold" data-aos="fade-up">
-            29 to 31 November 2024 with over 80 sessions - Cincinnati, Ohio
+            29 to 31 November 2024 with over 20 sessions - Delhi
         </p>
         <div class="count-down max-w-full md:p-6 mt-6 " data-aos="zoom-in-up" data-aos-delay="500">
           <div class="flipdown m-auto max-w-full flex justify-center content-center" id="flipdown"></div>
@@ -506,7 +509,7 @@
         </div>
     </section>
     <!-- Conference Tickets Section with Glassmorphism -->
-    <section class="px-4 py-12 dark:bg-black" id="ticket">
+    <section class="px-4 py-12 dark:bg-black" id="tickets">
         <!-- Title and Subtitle -->
          <div class="max-w-7xl mx-auto">
            <div class="flex flex-col justify-center items-center mb-10">
@@ -587,12 +590,15 @@
              </ul>
              <!-- Button -->
              <div class="text-center mt-8">
-               <button
+              <a href="#registration">
+                <button
                  class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-orange hover:bg-darkorange transition"
                  data-aos="zoom-in" data-aos-delay="500"
                >
                  Buy ticket
                </button>
+              </a>
+               
                        </div>
                    </div>
    
@@ -661,12 +667,15 @@
              </ul>
              <!-- Button -->
              <div class="text-center mt-8">
-               <button
+              <a href="#registration">
+                <button
                  class="neumorphic-btn text-white font-bold py-3 px-6 rounded-lg bg-secondaryBlue hover:bg-darkSecondaryBlue transition"
                  data-aos="zoom-in" data-aos-delay="300"
                >
                  Buy ticket
                </button>
+              </a>
+               
                            </div>
                        </div>
                    </div>
@@ -676,7 +685,7 @@
 
     <!-- Registration Section -->
 
-    <section class="bg-cover bg-center flex justify-center items-center registration-container bg-parallax"  data-aos="fade-up" data-aos-duration="700">
+    <section id="registration" class="bg-cover bg-center flex justify-center items-center registration-container bg-parallax"  data-aos="fade-up" data-aos-duration="700">
     
         <div class="container flex flex-col lg:flex-row justify-between md:justify-evenly items-center h-screen bg-cover bg-center p-6 " >
         
@@ -705,7 +714,7 @@
     </section>
 
   <!-- Carousel Section -->
-  <section class="relative dark:bg-black px-12 pt-12 pb-40 " data-aos="fade-up" data-aos-duration="700"> 
+  <section id="gallery" class="relative dark:bg-black px-12 pt-12 pb-40 " data-aos="fade-up" data-aos-duration="700"> 
     <div class="max-w-6xl mx-auto px-4 md:px-0 relative w-full overflow-hidden flex flex-col justify-center">
         <!-- Text Content -->
         <div class="self-center md:w-1/2" data-aos="fade-down" data-aos-duration="700">
