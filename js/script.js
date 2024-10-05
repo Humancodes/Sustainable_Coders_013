@@ -103,3 +103,16 @@ const carouselItems = document.querySelectorAll('.carousel-item');
 
     setInterval(nextSlide, 5000);
 
+    document.addEventListener('DOMContentLoaded', () => {
+      // Unix timestamp (in seconds) to count down to
+      var toDayFromNow = (new Date("Nov 29, 2024 08:00:00").getTime() / 1000) + (3600 / 60 / 60 / 24) - 1;
+      // Set Up FlipDown
+      var flipdown = new FlipDown(toDayFromNow)
+  
+      // Start The Count Down
+      .start()
+      // Do Something When The Countdown Ends
+      .ifEnded(() => {
+          document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+      });
+  });

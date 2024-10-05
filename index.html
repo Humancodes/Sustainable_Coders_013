@@ -10,6 +10,14 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans&display=swap"
+            rel="stylesheet">
+        <!-- Style Flipdown -->
+        <link href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" />
     <!-- animate.css -->
      <!-- aos -->
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -325,7 +333,7 @@
         </div>
         <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center">Conference Schedule</h2>
         <p class="text-center text-gray-500 mt-2 lg:px-56 text-center">
-          We are very excited about the program being planned for Events 2019
+          We are very excited about the program being planned for Events 2024
           this summer in Cincinati, Ohio.
         </p>
       </div>
@@ -335,13 +343,13 @@
         <div class="grid-cols-3 md:grid-cols-5 grid text-white">
           <button class="py-6 px-5 bg-orange w-full font-semibold">
             Day 1
-            <span class="lg:inline-flex text-xs font-normal hidden">July 29, 2019</span>
+            <span class="lg:inline-flex text-xs font-normal hidden">November 29, 2024</span>
           </button>
           <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
-            Day 2 <span class="lg:inline-flex text-xs font-normal hidden">July 30, 2019</span>
+            Day 2 <span class="lg:inline-flex text-xs font-normal hidden">November 30, 2024</span>
           </button>
           <button class="py-6 bg-secondaryBlue px-5 w-full font-semibold">
-            Day 3 <span class="lg:inline-flex text-xs font-normal hidden">July 31, 2019</span>
+            Day 3 <span class="lg:inline-flex text-xs font-normal hidden">November 31, 2024</span>
           </button>
             </div>
         </div>
@@ -424,7 +432,7 @@
     </section>
 
     <!-- Countdown Section with Parallax Scrolling -->
-    <section class="relative w-full py-20 text-white wavy-bg bg-orange bg-img-timer " >
+    <section class="relative w-full py-20 wavy-bg bg-orange bg-img-timer " >
       <div class="flex flex-col justify-center items-center ">
         <div
           class="m-8 w-14 bg-blue-50 rounded-full h-14 flex justify-center items-center"
@@ -439,12 +447,12 @@
         <p class="text-2xl md:text-3xl font-semibold text-center md:px-24">
           Time left until the conference start
         </p>
-        <p class="mt-2 text-center md:w-1/2">
-          29 to 31 July 2019 with over 80 sessions - Cincinnati, Ohio
+        <p class="mt-2 text-center md:w-1/2 font-semibold">
+            29 to 31 November 2024 with over 80 sessions - Cincinnati, Ohio
         </p>
-        <div class=" py-8 my-4 mx-10 w-72 sm:w-80 md:w-2/3 md:my-20 bg-white opacity-5">
-
-            </div>
+        <div class="count-down max-w-full md:p-6 mt-6 ">
+          <div class="flipdown m-auto max-w-full flex justify-center content-center" id="flipdown"></div>
+        </div>
         </div>
     </section>
 
@@ -647,50 +655,50 @@
   <section class="relative z-10 p-12"> 
     <div class="max-w-6xl mx-auto px-4 md:px-0 relative w-full overflow-hidden flex flex-col justify-center">
         <!-- Text Content -->
-        <div class="self-center md:w-1/2">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Memories From The Events</h2>
+        <div class="self-center md:w-1/2 pb-8">
+            <h2 class="text-4xl font-bold text-gray-900 text-center">Memories From The Events</h2>
     
         </div>
       <!-- Carousel Wrapper with Fixed Height -->
-      <div class="relative h-[400px] w-full md:h-[500px] lg:h-[600px]">
+      <div class="relative h-[400px] w-full md:h-[500px] lg:h-[600px] pb-[5rem]">
         <!-- Carousel Images -->
         <div class="carousel-item active h-full w-full">
-          <img src="/images/carousal-1.jpg" alt="Nature" class="object-cover h-full w-full">
+          <img src="./images/carousal-1.jpg" alt="Nature" class="object-cover h-full w-full">
           <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
             <h3 class="text-lg md:text-xl lg:text-2xl font-bold">InfoShare</h3>
             <p class="text-xs md:text-sm">Explore the beauty of Information.</p>
           </div>
         </div>
         <div class="carousel-item h-full w-full">
-          <img src="/images/carousal-2.jpg" alt="City" class="object-cover h-full w-full">
+          <img src="./images/carousal-2.jpg" alt="City" class="object-cover h-full w-full">
           <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
             <h3 class="text-lg md:text-xl lg:text-2xl font-bold">Linkedin</h3>
             <p class="text-xs md:text-sm">Discover amazing Networks.</p>
           </div>
         </div>
         <div class="carousel-item h-full w-full">
-          <img src="/images/carousal-3.jpg" alt="Mountains" class="object-cover h-full w-full">
+          <img src="./images/carousal-3.jpg" alt="Mountains" class="object-cover h-full w-full">
           <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
             <h3 class="text-lg md:text-xl lg:text-2xl font-bold">Web Summit</h3>
             <p class="text-xs md:text-sm">Explore the beauty of Web.</p>
           </div>
         </div>
         <div class="carousel-item h-full w-full">
-            <img src="/images/carousal-4.jpg" alt="Mountains" class="object-cover h-full w-full">
+            <img src="./images/carousal-4.jpg" alt="Mountains" class="object-cover h-full w-full">
             <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
               <h3 class="text-lg md:text-xl lg:text-2xl font-bold">Vanguard</h3>
               <p class="text-xs md:text-sm">Explore the WebSecurity.</p>
             </div>
         </div>
         <div class="carousel-item h-full w-full">
-            <img src="/images/carousal-5.webp" alt="Mountains" class="object-cover h-full w-full">
+            <img src="./images/carousal-5.webp" alt="Mountains" class="object-cover h-full w-full">
             <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4 md:p-6 lg:p-8">
               <h3 class="text-lg md:text-xl lg:text-2xl font-bold">ProductHunt</h3>
               <p class="text-xs md:text-sm">Explore amazing new Products.</p>
             </div>
         </div>
         <div class="carousel-item h-full w-full">
-            <img src="/images/carousal-6.jpg" alt="Mountains" class="object-cover h-full w-full">
+            <img src="./images/carousal-6.jpg" alt="Mountains" class="object-cover h-full w-full">
             <div class="absolute bottom-5 left-0 bg-opacity-75 bg-black text-white w-full p-4">
               <h3 class="text-lg md:text-xl lg:text-2xl font-bold">DataHub</h3>
               <p class="text-xs md:text-sm">Explore the amazing datas.</p>
@@ -801,6 +809,7 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/b7c0508dd7.js" crossorigin="anonymous"></script>
+    <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
 </body>
 
 </html>
