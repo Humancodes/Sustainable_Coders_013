@@ -18,9 +18,16 @@ hamburgerBtn.addEventListener("click", () => {
 const bodyCont = document.getElementById("bodyCont");
 const switchBtn = document.querySelectorAll("#switch input"); // Select both switches
 
+const logoDark = document.querySelector(".logo-dark");
+const logoLight = document.querySelector(".logo-light");
+
 switchBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     bodyCont.classList.toggle("dark");
+
+    // Toggle hidden class for the logos
+    logoDark.classList.toggle("hidden");
+    logoLight.classList.toggle("hidden");
   });
 });
 
@@ -59,8 +66,7 @@ tailwind.config = {
         black: "#011a3e",
       },
       boxShadow: {
-        "white-lg":
-          "rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px",
+        "shade-white": "rgba(255, 255, 255, 0.5) -10px 10px 15px",
       },
     },
     screens: {
@@ -135,61 +141,67 @@ setInterval(nextSlide, 5000);
 
 // presentaion vedio part
 // Click button to open video modal
-document.getElementById('videoButton').addEventListener('click', function() {
-    const videoModal = document.getElementById('videoModal');
-    const html5Video = document.getElementById('html5Video');
-    
-    // Show the modal
-    videoModal.classList.remove('hidden');
-    videoModal.classList.add('flex');
+document.getElementById("videoButton").addEventListener("click", function () {
+  const videoModal = document.getElementById("videoModal");
+  const html5Video = document.getElementById("html5Video");
 
-    // Play the video with muted autoplay if required by the browser
-    html5Video.play().catch(function(error) {
-        console.log("Autoplay failed, browser policies may prevent it. Video will start muted.");
-        html5Video.muted = true;
-        html5Video.play();
-    });
+  // Show the modal
+  videoModal.classList.remove("hidden");
+  videoModal.classList.add("flex");
+
+  // Play the video with muted autoplay if required by the browser
+  html5Video.play().catch(function (error) {
+    console.log(
+      "Autoplay failed, browser policies may prevent it. Video will start muted."
+    );
+    html5Video.muted = true;
+    html5Video.play();
+  });
 });
 
-    // Previous slide
-    document.getElementById('prevBtn').addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-      updateCarousel(currentIndex);
-    });
+// Previous slide
+document.getElementById("prevBtn").addEventListener("click", () => {
+  currentIndex =
+    (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  updateCarousel(currentIndex);
+});
 
-    // Indicator click
-    indicators.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
-        currentIndex = index;
-        updateCarousel(currentIndex);
-      });
-    });
-
-    setInterval(nextSlide, 5000);
-
-    document.addEventListener('DOMContentLoaded', () => {
-      // Unix timestamp (in seconds) to count down to
-      var toDayFromNow = (new Date("Nov 29, 2024 08:00:00").getTime() / 1000) + (3600 / 60 / 60 / 24) - 1;
-      // Set Up FlipDown
-      var flipdown = new FlipDown(toDayFromNow)
-  
-      // Start The Count Down
-      .start()
-      // Do Something When The Countdown Ends
-      .ifEnded(() => {
-          document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
-      });
+// Indicator click
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener("click", () => {
+    currentIndex = index;
+    updateCarousel(currentIndex);
   });
+});
+
+setInterval(nextSlide, 5000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Unix timestamp (in seconds) to count down to
+  var toDayFromNow =
+    new Date("Nov 29, 2024 08:00:00").getTime() / 1000 +
+    3600 / 60 / 60 / 24 -
+    1;
+  // Set Up FlipDown
+  var flipdown = new FlipDown(toDayFromNow)
+
+    // Start The Count Down
+    .start()
+    // Do Something When The Countdown Ends
+    .ifEnded(() => {
+      document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+    });
+});
 // Click button to close modal and stop video
-document.getElementById('closeModal').addEventListener('click', function() {
-    const videoModal = document.getElementById('videoModal');
-    const html5Video = document.getElementById('html5Video');
-    
-    // Hide the modal
-    videoModal.classList.add('hidden');
-    videoModal.classList.remove('flex');
-    
-    // Pause and reset the video
-    html5Video.pause();
-    html5Video.currentTime = 0;
+document.getElementById("closeModal").addEventListener("click", function () {
+  const videoModal = document.getElementById("videoModal");
+  const html5Video = document.getElementById("html5Video");
+
+  // Hide the modal
+  videoModal.classList.add("hidden");
+  videoModal.classList.remove("flex");
+
+  // Pause and reset the video
+  html5Video.pause();
+  html5Video.currentTime = 0;
 });

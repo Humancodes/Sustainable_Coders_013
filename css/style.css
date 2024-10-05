@@ -94,15 +94,7 @@ input:checked + .slider:before {
   /* Increased shadow size and intensity */
   box-shadow: inset -5px -3px 8px -3px #8983f7, inset -12px -5px 2px 0 #a3dafb;
 }
-
-/* Navbar */
-
-/* #desktop-nav {
-  color: #646f79;
-} */
-/* .nav-mob-effect {
-  transition: all 3s ease-in-out;
-} */
+/* DARK MODE LIGHT MODE CSS END */
 
 /* Hero Section */
 #hero {
@@ -262,12 +254,12 @@ input:checked + .slider:before {
   transform: translateX(6px); /* Move right by 10px */
 }
 /* timer section  */
-.bg-img-timer{
-  background: url("https://cdn.pixabay.com/photo/2017/03/28/12/17/chairs-2181994_1280.jpg") no-repeat center center fixed;
-    background-size: cover;
-
+.bg-img-timer {
+  background: url("https://cdn.pixabay.com/photo/2017/03/28/12/17/chairs-2181994_1280.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(90%);
 }
-
 /* Carousel */
 .carousel-item {
   display: none;
