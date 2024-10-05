@@ -31,14 +31,14 @@ window.addEventListener("scroll", function () {
     navbar.classList.add("lg:dark:bg-black");
     navbar.classList.remove("dark:lg:bg-transparent");
     navDesktop.classList.add("lg:dark:text-white");
-    navDesktop.classList.remove("text-gray-300");
+    navDesktop.classList.remove("lg:text-gray-300");
   } else {
     navbar.classList.remove("lg:bg-white");
     navbar.classList.add("dark:lg:bg-transparent");
     navbar.classList.remove("lg:dark:bg-black");
     navDesktop.classList.remove("lg:dark:text-white");
-    navDesktop.classList.remove("text-gray-600");
-    navDesktop.classList.add("text-gray-300");
+    navDesktop.classList.add("text-gray-600");
+    navDesktop.classList.add("lg:text-gray-300");
   }
 });
 
@@ -199,26 +199,25 @@ document.getElementById("closeModal").addEventListener("click", function () {
 
 function handleFormSubmit(event) {
   event.preventDefault();
-  new Notify ({
-    title: 'Registered',
-    text: 'Thanks for Registering. See you in the event 🎉.',
-    status: 'success',
-    effect: 'fade',
-speed: 300,
-customClass: null,
-customIcon: null,
-showIcon: true,
-showCloseButton: true,
-autoclose: true,
-autotimeout: 3000,
-gap: 20,
-distance: 20,
-type: 'outline',
-position: 'right top'
-})
+  new Notify({
+    title: "Registered",
+    text: "Thanks for Registering. See you in the event 🎉.",
+    status: "success",
+    effect: "fade",
+    speed: 300,
+    customClass: null,
+    customIcon: null,
+    showIcon: true,
+    showCloseButton: true,
+    autoclose: true,
+    autotimeout: 3000,
+    gap: 20,
+    distance: 20,
+    type: "outline",
+    position: "right top",
+  });
 
-let count=document.getElementById("registration-count");
+  let count = document.getElementById("registration-count");
 
-count.innerText=parseInt(count.innerText)+1;
-
+  count.innerText = parseInt(count.innerText) + 1;
 }

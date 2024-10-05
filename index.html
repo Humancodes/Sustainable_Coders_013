@@ -31,7 +31,10 @@
     />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>TechConf</title>
@@ -47,7 +50,7 @@
 
     <nav
       id="navbar"
-      class="h-[4.5rem] lg:h-[5rem] bg-white dark:bg-black dark:text-white lg:bg-transparent w-full fixed top-0 z-50"
+      class="h-[4.5rem] lg:h-[5rem] bg-white dark:bg-black dark:text-white lg:text-gray-300 lg:bg-transparent w-full fixed top-0 z-50"
       data-aos="fade-down"
       data-aos-duration="800"
     >
@@ -422,7 +425,7 @@
       </div>
     </div>
 
-    <!-- topics start --> 
+    <!-- topics start -->
 
     <section id="topic" class="dark:bg-black pb-16">
       <div class="main-top-topic py-20">
@@ -1081,44 +1084,107 @@
 
     <!-- Registration Section -->
 
-    <section id="registration" class="bg-cover bg-center flex justify-center items-center registration-container bg-parallax py-20"  data-aos="fade-up" data-aos-duration="700">
-    
-      <div class="container flex flex-col lg:flex-row justify-between md:justify-evenly items-center h-full bg-cover bg-center p-6 " >
-      
-          <!-- Left Section -->
-          <div class="text-white mb-10 md:mb-0 md:max-w-lg text-center lg:text-left" >
+    <section
+      id="registration"
+      class="bg-cover bg-center flex justify-center items-center registration-container bg-parallax py-20"
+      data-aos="fade-up"
+      data-aos-duration="700"
+    >
+      <div
+        class="container flex flex-col lg:flex-row justify-between md:justify-evenly items-center h-full bg-cover bg-center p-6"
+      >
+        <!-- Left Section -->
+        <div
+          class="text-white mb-10 md:mb-0 md:max-w-lg text-center lg:text-left"
+        >
+          <span
+            class="font-bold mb-6 leading-tight lg:text-xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            >29 To 31 November 2024</span
+          >
+          <h1
+            class="display-4 lg:text-6xl leading-tight sm:text-4xl text-2xl font-bold md:mt-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Total Registrations
+          </h1>
 
-            <span class="font-bold mb-6 leading-tight lg:text-xl" data-aos="fade-up" data-aos-delay="100" >29 To 31 November 2024</span>
-            <h1 class="display-4 lg:text-6xl leading-tight sm:text-4xl text-2xl font-bold md:mt-2" data-aos="fade-up" data-aos-delay="200">Total Registrations</h1>
-      
-            <!-- Registration Count -->
-            <p class="text-5xl font-extrabold text-orange my-6" data-aos="fade-up" data-aos-delay="300"><span id="registration-count">40</span>+  </p>
-            <p class="text-5xl font-extrabold text-white my-6 "data-aos="fade-up" data-aos-delay="400">And counting</p>
-              <h2 class="text-2xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="400">Register your coming at TechConf</h2>
-              
-          </div>
+          <!-- Registration Count -->
+          <p
+            class="text-5xl font-extrabold text-orange my-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <span id="registration-count">40</span>+
+          </p>
+          <p
+            class="text-5xl font-extrabold text-white my-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            And counting
+          </p>
+          <h2
+            class="text-2xl font-bold text-white mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            Register your coming at TechConf
+          </h2>
+        </div>
 
-          <!-- Right Section: Registration Form -->
-          <div class="bg-white rounded-lg shadow-lg p-8 w-full md:w-[350px] lg:w-[350px]"  data-aos="fade-up" data-aos-duration="700">
-              <form class="space-y-6" onsubmit=" handleFormSubmit(event)">
-                  <h3 class="text-2xl font-bold text-center">Register your coming</h3>
-                  <input type="text" placeholder="Enter your username" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange" data-aos="fade-up" data-aos-duration="500">
-                  <input type="email" placeholder="Enter your email address" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange" data-aos="fade-up" data-aos-duration="500">
-                  <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange" data-aos="fade-up" data-aos-duration="500">
-                      <option value="" disabled selected>Choose a ticket</option>
-                      <option value="One Day">One Day Ticket</option>
-                      <option value="All Day">All Day Ticket</option>
-                      
-                  </select>
-                  <button type="submit" class="w-full bg-orange text-white font-semibold py-3 rounded-lg hover:bg-darkorange transition-colors" data-aos="fade-up" data-aos-duration="500" id="register-btn">Get your ticket</button>
-              </form>
-          </div>
+        <!-- Right Section: Registration Form -->
+        <div
+          class="bg-white rounded-lg shadow-lg p-8 w-full md:w-[350px] lg:w-[350px]"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <form class="space-y-6" onsubmit=" handleFormSubmit(event)">
+            <h3 class="text-2xl font-bold text-center">Register your coming</h3>
+            <input
+              type="text"
+              placeholder="Enter your username"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            />
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            />
+            <select
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <option value="" disabled selected>Choose a ticket</option>
+              <option value="One Day">One Day Ticket</option>
+              <option value="All Day">All Day Ticket</option>
+            </select>
+            <button
+              type="submit"
+              class="w-full bg-orange text-white font-semibold py-3 rounded-lg hover:bg-darkorange transition-colors"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              id="register-btn"
+            >
+              Get your ticket
+            </button>
+          </form>
+        </div>
       </div>
-  </section>
-
+    </section>
 
     <!-- Carousel Section -->
-     
+
     <section
       id="gallery"
       class="relative dark:bg-black px-12 pt-12 pb-40"
