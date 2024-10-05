@@ -5,15 +5,6 @@ const mobileMenu = document.getElementById("mobile-menu");
 hamburgerBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
-
-// // Dark-Light Mode
-// const bodyCont = document.getElementById("bodyCont");
-// const switchBtn = document.getElementById("switch");
-
-// switchBtn.addEventListener("click", () => {
-//   bodyCont.classList.toggle("dark");
-// });
-
 // Dark-Light Mode
 const bodyCont = document.getElementById("bodyCont");
 const switchBtn = document.querySelectorAll("#switch input"); // Select both switches
@@ -205,3 +196,29 @@ document.getElementById("closeModal").addEventListener("click", function () {
   html5Video.pause();
   html5Video.currentTime = 0;
 });
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  new Notify ({
+    title: 'Registered',
+    text: 'Thanks for Registering. See you in the event 🎉.',
+    status: 'success',
+    effect: 'fade',
+speed: 300,
+customClass: null,
+customIcon: null,
+showIcon: true,
+showCloseButton: true,
+autoclose: true,
+autotimeout: 3000,
+gap: 20,
+distance: 20,
+type: 'outline',
+position: 'right top'
+})
+
+let count=document.getElementById("registration-count");
+
+count.innerText=parseInt(count.innerText)+1;
+
+}
