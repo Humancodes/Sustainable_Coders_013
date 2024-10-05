@@ -40,7 +40,7 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 - Glassmorphism effects for enhanced UI/UX
 
   
-## design decisions or assumptions
+## Design decisions or assumptions
 - Opted for **AOS animations** to ensure smooth transitions and enhance user engagement.
 - Used **FontAwesome** for icons to maintain visual consistency and easy integration.
 - Choose **Tailwind CSS** for rapid UI development and responsiveness.
