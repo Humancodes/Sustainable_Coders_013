@@ -77,8 +77,6 @@ Once the project is running, you can navigate the website through the following 
 ## Credentials
 No user login credentials required.
 
-## APIs Used
-
 ## Technology Stack
 
 - **HTML5**: For structuring content.
