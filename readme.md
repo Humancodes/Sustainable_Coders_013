@@ -55,7 +55,7 @@ git clone https://github.com/Humancodes/Sustainable_Coders_013.git
 ### Navigate to the project folder
 cd Sustainable_Coders_013
 
-### Paste the path of index.html
+### Paste the path of index.html in the browser
 or download the live server extension from VS code extensions and then click on **Go Live** on the bottom right 
 
 ## Usage
