@@ -8,7 +8,7 @@ TechConf is a modern, responsive website designed for a major tech conference, a
 Frontend
 
 ## Deployed App
-https://techconf-ochre.vercel.app/
+https://techconf-nine.vercel.app/
 
 ## Directory Structure
 
@@ -72,6 +72,25 @@ Once the project is running, you can navigate the website through the following 
 - **Countdown Timer**: Displays how much time is left until the conference starts.
 - **Registration Count**: Shows the total number of participants who have registered so far.
 
+## Screenshots
+
+### Home page
+![image](https://github.com/user-attachments/assets/392ff092-c433-4d61-917d-e3a1b71f8487)
+
+### About you can see video of features go through
+![image](https://github.com/user-attachments/assets/295544c9-b583-4bb4-a567-c4c51b63e9e6)
+
+### Schedule
+![image](https://github.com/user-attachments/assets/f1539849-f801-4a29-9fc7-dce74dfc7eb8)
+
+### Countdown
+![image](https://github.com/user-attachments/assets/9fd12f07-71a9-428d-8e9c-2ca204c52f48)
+
+### Registration Section with Registration count
+![image](https://github.com/user-attachments/assets/babef04d-c5e5-4e50-93ae-cfd61e817f2e)
+
+### Gallery Section with past event pictures
+![image](https://github.com/user-attachments/assets/8183ce01-80d9-43ac-8f23-9868bf2f386a)
 
 
 ## Credentials
