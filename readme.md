@@ -25,10 +25,14 @@ https://techconf-nine.vercel.app/
 
 
 ## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+### Click on image to go to watch the video
+[![Watch the video](https://github.com/user-attachments/assets/501bb4bc-9bb2-4bc6-b1b9-7555c283af11)](https://youtu.be/EKLBjPwpN70)
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+### Click on image to go to watch the video
+[![Watch the video](https://github.com/user-attachments/assets/ad443c41-2725-4644-8d19-da8fd29aee3a)
+](https://youtu.be/ZEzFuJYUk9A)
+
 
 ## Features
 - Parallax scrolling on the landing page
