@@ -25,11 +25,11 @@ https://techconf-nine.vercel.app/
 
 
 ## Video Walkthrough of the project
-### Click on image to go to watch the video
+### Click on image to watch the video
 [![Watch the video](https://github.com/user-attachments/assets/501bb4bc-9bb2-4bc6-b1b9-7555c283af11)](https://youtu.be/EKLBjPwpN70)
 
 ## Video Walkthrough of the codebase
-### Click on image to go to watch the video
+### Click on image to watch the video
 [![Watch the video](https://github.com/user-attachments/assets/ad443c41-2725-4644-8d19-da8fd29aee3a)
 ](https://youtu.be/ZEzFuJYUk9A)
 
