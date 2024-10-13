@@ -8,7 +8,7 @@ TechConf is a modern, responsive website designed for a major tech conference, a
 Frontend
 
 ## Deployed App
-https://techconf-nine.vercel.app/
+https://tech-conf.netlify.app/
 
 ## Directory Structure
 
